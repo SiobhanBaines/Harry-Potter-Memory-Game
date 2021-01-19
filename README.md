@@ -76,8 +76,7 @@ When using Google to find out more information about various parts of my code th
 ### Media
 
 The images used in this game are all free clipart available on [pinclipart](www.pinclipart.com) and [pngitem](www.pngitem.com). 
-Below are the links where each piece of clipart was downloaded from:
-#### Hogwarts coat of arms
+Below are the links for each piece of clipart:
 [Hogwarts Crest](https://www.pngitem.com/middle/iJiiRhb_hogwarts-crest-transparent-background-hd-png-download/)
 [Gryffindor Crest](https://www.pngitem.com/middle/mRxxbi_transparent-gryffindor-png-harry-potter-house-crests-png/)
 [Slytherin Crest](https://www.pngitem.com/middle/iibxmTw_harry-potter-mug-slytherin-crest-png-download-slytherin/)
