@@ -1,4 +1,4 @@
-# Siobhan-Baines-MS2-HP-Themed-Game
+# Siobhan-Baines-MS2-Harry Potter-Themed-Game
 
 The concept of this game is a simple pattern following game where each of the Hogwarts houses crests are the buttons which will light up creating a pattern. 
 The game will randomly light up one of the 4 crests and the player will need to click on that crest. The game will then light up that crest followed by another randomly selected crest which could be the same as the first crest and the player will need to click on the correct crests to follow the pattern. The game will continue until the visitor makes a mistake when the game will let the player know they have failed with an Harry Potter related message which will be linked to the house of the crest last clicked on by the player.
