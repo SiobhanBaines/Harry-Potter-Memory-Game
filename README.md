@@ -4,9 +4,9 @@ The concept of this game is a simple pattern following game where each of the Ho
 The game will randomly light up one of the 4 crests and the player will need to click on that crest. The game will then light up that crest followed by another randomly selected crest which could be the same as the first crest and the player will need to click on the correct crests to follow the pattern. The game will continue until the visitor makes a mistake when the game will let the player know they have failed with an Harry Potter related message which will be linked to the house of the crest last clicked on by the player.
  
 
- ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS1-Portfolio/blob/a9b3ae92a03364be3599e6b646f995625c87e66b/reference_documents/images_readme/amiresponsive_image.png)
+ ![image] /*(https://github.com/SiobhanBaines/Siobhan-Baines-MS1-Portfolio/blob/a9b3ae92a03364be3599e6b646f995625c87e66b/reference_documents/images_readme/amiresponsive_image.png)*/
 
-[View the live project here](https://siobhanbaines.github.io/Siobhan-Baines-MS2-HP-Game/)
+[View the live project here] /*(https://siobhanbaines.github.io/Siobhan-Baines-MS2-HP-Game/)*/
 
 
 ## User Experience (UX)
@@ -32,24 +32,24 @@ The game will randomly light up one of the 4 crests and the player will need to 
 ### *Structure*
 My landing page 
 
-/*![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS1-Portfolio/blob/b94b63aaa5b1f6cf8f91de50214f0592d0918660/reference_documents/images_readme/test-results-images/home_desktop.png)*/
+![image]()
 
 
 ### *Skeleton*
 #### Wireframes
 ###### Initial Design
-[Desktop]/*(https://github.com/SiobhanBaines/Siobhan-Baines-MS1-Portfolio/blob/072cd4cb2541e2fbbe8c383273a9f79652423633/reference_documents/wireframes/initial_design/desktop_wire_frames_v1.0%20.pdf)*/
+[Desktop]
 [Tablet]
 [Mobile]
 
 ###### Final Design
-[Desktop]/*(https://github.com/SiobhanBaines/Siobhan-Baines-MS1-Portfolio/blob/072cd4cb2541e2fbbe8c383273a9f79652423633/reference_documents/wireframes/initial_design/desktop_wire_frames_v1.0%20.pdf)*/
+[Desktop]
 [Tablet]
 [Mobile]
 
 ### *Surface*
-[index_image]/*(https://github.com/SiobhanBaines/Siobhan-Baines-MS1-Portfolio/blob/3ed4294aa8e1cb3cc202dc00b44f3063ae524b19/assets/images/index_image.png), */
-[colour pallet]/*(https://github.com/SiobhanBaines/Siobhan-Baines-MS1-Portfolio/blob/072cd4cb2541e2fbbe8c383273a9f79652423633/reference_documents/colour_pallet.pdf) */
+[index_image](), 
+[colour pallet]()
 
 
 ## Features
