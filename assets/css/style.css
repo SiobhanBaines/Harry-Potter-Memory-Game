@@ -1,20 +1,25 @@
 /* font face by Anke Arnold (www.anke-art.de) */
-@font-face{
+/*@font-face{
    font-family:"ParryHotter";
    src: url("https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/615e32a396599d4488cdf62a2002f6122bbcbdd1/assets/fonts/ParryHotter.ttf") format("truetype");
-}
+}*/
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap'); */
 /* body */
 body {
-   background-color:#4B0082;
+   /*background-color:#4B0082;*/
 }
+
 h1 {
-   font-family: "ParryHotter",sans-serif;
-   font-size: large;
+   font-family: "ParryHotter", Arial, sans-serif;
+   font-size: large; 
    color: #f5cd11;
 }
 
-#home-page{
-   background-color:#4B0082;
-   color:#f5cd11;
+.hogwarts-crest{
+   background-image: url(assets/images/hogwarts_crest.png/);
+   position: absolute;
+   width: 50%;
+   margin:0 auto;
+
 }
+
