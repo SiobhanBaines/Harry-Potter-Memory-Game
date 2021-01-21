@@ -1,80 +1,99 @@
 /* font face by Anke Arnold (www.anke-art.de) */
-/*@font-face{
-   font-family:"ParryHotter";
-   src: url("assets/fonts/parry-hotter.ttf") format("truetype");
-}*/
+@font-face {
+    font-family: 'ParryHotter';
+    src: url('fonts/ParryHotter.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*@font-face {
+font-family: ‘Harry Potter’;
+src: url("http://www.fontsaddict.com/fontface/harry-potter.TTF");
+}
+/*@font-face {
+    font-family: 'parry_hotterregular';
+    src: url('assets/fornts/parryhotter-webfont.woff2') format('woff2'),
+         url('assets/fonts/parryhotter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap'); */
 /* body */
 body {
    margin: 0;
    padding: 0;; 
-   font-family: "ParryHotter", Arial, Helvetica, sans-serif;
+ /*  font-family: "parry_hotterregular", Arial, Helvetica, sans-serif;*/
+/*   font-family: "parry_hotterregular", Arial, Helvetica, sans-serif;*/
+
    font-weight: 700;
    color: #ffffff;
    height: 100%;
    background-color:#200236;
+   overflow: hidden;
 }
-
+/*------------------------------------------Header*/
+header{
+   margin: 0;
+   min-height: 50px;
+   z-index: 10;
+   position: fixed;
+   top: 0;
+   width: 100vw;
+}
 .navbar { /* Copied from Whiskey Drop - Coding Institute - modified */
-    margin-bottom: 0;
-    border: 0;
-    width: 100%;
+   margin-bottom: 0;
+   border: 0;
+   width: 100%;
 }
 .nav-item {
-    font-size: 20px;
-    font-weight: 500;
+   font-size: 20px;
+   font-weight: 500;
 }
-.navbar-light .navbar-nav .nav-link{
-    color: #444c5d;
+.navbar-dark .navbar-nav .nav-link{
+   color: #ffffff;
 }
 .school-crest-container{
-   height: 100%;
-   width: 100%;
-   background-size: cover;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-align: center;
-      -ms-flex-align: center;
-         align-items: center;
-   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-         justify-content: center;
-   position: relative;
-}
-h1 {
-   font-family: "ParryHotter", Arial, sans-serif;
-   font-size: xx-large; 
-   color: #f5cd11;
-   font-weight: 900;
+   height: 100vh;
+   width: 100vw;
+   justify-content: center;
+   padding: 10%;
+   align-items: center;
+   position: absolute;
 }
 
-#hogwarts-crest{
-   position: absolute;
-   width: 200;
-   height: 200;
-   
+h1 {
+   font-size: 48px; 
+}
+
+.welcome{
+   margin-bottom: 15px;
+   border-bottom: 0;
+   text-align: center;
+   font-family: "ParryHotter", sans-serif;
+   color: #f5cd11;
+}
+.hogwarts-crest{
+   /*display: grid;
+   height: 70%;
+   max-width: 70%;
+   max-height: 100vh;
+   margin: auto; */
+   justify-content: center;
+   align-items: center;
+   position:absolute;
+   right:10%;
+   top:0px;
+   width:60%;
+   height:auto;
 }
 
 .house-crest-container{
-   height: 100%;
-   width: 100%;
-   background-size: cover;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-align: center;
-      -ms-flex-align: center;
-         align-items: center;
-   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-         justify-content: center;
-   position: relative;
+   overflow: hidden;
 }
 .game-btn{
    display: inline-block;
    width: 25%;
    height: 25%;
+
 }
 
 .gryffindor{}
@@ -82,3 +101,30 @@ h1 {
 .hufflpuff{}
 .ravenclaw{}
 
+/*--------------------------------------------Media Queries*/
+@media (max-width: 768px) {
+   .school-crest-container{
+     /* height: auto;
+      width: auto;*/
+      padding-top: 35%;
+      align-items: center;
+      position: relative;
+   }
+   h1 {
+   font-size: 34px; 
+   }
+   .hogwarts-crest{
+      /*display: grid;
+      height: 90%;
+      max-width: 100%;
+      max-height: 70vh;
+      margin: auto;*/
+      justify-content: center;
+      align-items: center;
+      position:absolute;
+      right:10%;
+      top:0px;
+      width:60%;
+      height:auto;
+   }
+}

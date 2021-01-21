@@ -1,6 +1,18 @@
 # Testing of Siobhan-Baines-MS2_HP-Game
 
 ## Testing During Development
+### Issues with Font in the style of Harry Potter
+I want the text in the game to be in the same style as is used for the Harry Potter films. Google do not have a font so I searched the internet to find a suitable font and instructions how to add the font to my website. 
+[image]
+The font I have decided to use is ParryHotter created by Anke Arnold in Germany. I added it to my CSS stylesheet at the top using the font-face rule 
+<!--@font-face {
+    font-family: 'ParryHotter';
+    src: url('assets/fonts/ParryHotter.ttf');
+    font-weight: normal;
+    font-style: normal;
+} -->
+The error I was given was 'GET https://8000-deb9f02d-9615-41c1-acd8-e40a6c9e3634.ws-eu03.gitpod.io/assets/css/assets/fonts/ParryHotter.ttf net::ERR_ABORTED 404'. I could not understand why it was looking in assets/css/assets/fonts so tried other fonts. all gave the same error. Eventually I decided to move the fonts folder into the css folder and the font worked.
+[image]
 
 ## User Story One Testing
 
