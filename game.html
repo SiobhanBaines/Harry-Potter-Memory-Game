@@ -4,42 +4,43 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />-->
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-      </script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-      </script>
-   <link href="assets/fonts/parry-hotter.ttf" />
-   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-   <!--<link href="assets/index.js" type="text/javascript"   />-->
    <title>Harry Potter Game</title>
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+   <link rel="stylesheet" href="assets/css/fonts/ParryHotter.ttf" type="text/font">
+   <link rel="stylesheet" href="assets/css//style.css" type="text/css">
+   <link rel="stylesheet" href="assets/js/index.js" type="text/javascript">
 </head>
 
 <body>
    <!-- Help and About pages -->
-<header>
-      <div class="container-fluid header-container">
-            <nav class="navbar navbar-expand-sm navbar-light">
-                <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse"        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mr-auto">
-                           <li class="nav-item mr-2">
-                            <a class="nav-link" href="game.html">game</a>
-                        </li>
-                        <li class="nav-item mr-2">
-                            <a class="nav-link" href="help.html">Help</a>
-                        </li>
-                        <li class="nav-item mr-2">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+   <header>
+      <div class="container-fluid header-container">
+         <nav class="navbar navbar-expand-sm navbar-dark">
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+             <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                   <li class="active nav-item mr-2">
+                      <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                  <li class="nav-item mr-2">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item mr-2">
+                     <a class="nav-link" href="game.html">Game</a>
+                  </li>
+                  <li class="nav-item mr-2">
+                     <a class="nav-link" href="help.html">Help</a>
+                  </li>
+                  <li class="nav-item mr-2">
+                     <a class="nav-link" href="assets/cv/Siobhan_Baines_CV.pdf" target="_blank">CV Download</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
    </header>
    <!-- Hogwarts crest, moving Welcome and Tap to play -->
    <section id="home-page" >
@@ -68,6 +69,40 @@
       </div>
    </section>
   
+   <footer>
+      <div class="container">
+         <div class="row justify-content-center no-gutters">
+            <div class="col col-sm-6">
+               <ul class="social-media inline-block">
+                  <li class="social-media inline-block ml-3">
+                     <a href="=https://github.com/SiobhanBaines" target="_blank"><i class="fab fa-github"></i></a>
+                  </li>
+                  <li class="social-media inline-block ml-3">
+                     <a href="https://www.linkedin.com/in/siobhan-baines-9b296a22/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li class="social-media inline-block ml-3">
+                     <a href="https://www.facebook.com/siobhan.baines/" target="_blank"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li class="social-media inline-block ml-3">
+                     <a href="https://www.instagram.com/siobhan.baines/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="social-media inline-block ml-3">
+                     <a href="https://twitter.com/BainesSiobhan" target="_blank"><i class="fab fa-twitter"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   
+<!-- SCRIPTS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
+
+
+
 
 </html>
