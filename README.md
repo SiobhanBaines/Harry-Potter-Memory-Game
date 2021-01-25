@@ -11,7 +11,6 @@ The game will randomly light up one of the 4 crests and the player will need to 
 
 ## User Experience (UX)
 
-
 ### *User Stories*
 
 1. **A new visitor to the site**
@@ -28,12 +27,13 @@ Since I am using Harry Potter as the theme I feel it is only right to talk a lit
 
 
 ### *Strategy*
+The objective of this website is to create an interactive and fun game for a user. The user must want to interact with the website and the website must inturn react to the interaction of the user. I want the site to look enticing to an individual and to give the individual feedback on how they are doing in the game.
 
 ### *Scope*
-
-
+The concept of the game is based on the 'Simon' game of the 1980's in the style of Harry Potter. The website needs to be easy to use, information must be readily accessible including the instructions of how to play the game. When the website responseds to the players action it needs to be clear and fun. The initial landing page will have the Hogwarts crest and a 'Welcome to Hogwarts' banner. Clicking on the crest will take the player into the game itself which will then invite the player to start the game. One of the Hogwarts house crests will give the illusion of lighting up and the player will need to click on the same Hogwarts house to move upto the next level. The website will add to the pattern by lighting the inital house and a randomly selected second house. Each time the player fails to follow the pattern correctly 50 points will be awarded to the final house in the pattern and a message will appear on the screen which is relevant to that house. 
+![image]()
 ### *Structure*
-My landing page 
+The crests will be grouped together in sqaure in the centre. There will be a scoreboard at the top of the screen showing each house. I will add a dropdown menu so the player can find out the rules of the game and some details about the author of Harry Potter and the four houses in Hogwarts
 
 ![image]()
 
@@ -51,6 +51,7 @@ My landing page
 [Mobile]
 
 ### *Surface*
+I am using 5 crests in the website [Hogwarts crest](), [Gryffindor crest](), [Slytherin crest](), [Hufflepuff crest] and [Ravenclaw crest]().The four house crests give me the colors red, green, yellow and blue for the illumination affect. I chose purple as the background to make the site seem more magical and exciting. I have used a bright yellow for the headings in keeping with the gold of Hogwarts. To give the site a more official feel I found the'Parry Hotter' font which is very similar to the real Harry Potter font.
 [index_image](), 
 [colour pallet]()
 
@@ -67,7 +68,7 @@ CSS3, HMTL5, Javscript, JQuery, Bootstrap Framework, Google, Fontawesome
 
 
 ##### Font style
-I
+Parry Hotter and Ubuntu.
 
 ## Credits
 J K Rowling originally created the very successful Harry Potter series of books which is the core theme of this game.
