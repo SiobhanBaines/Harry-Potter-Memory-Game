@@ -51,7 +51,7 @@ The crests will be grouped together in sqaure in the centre. There will be a sco
 [Mobile]
 
 ### *Surface*
-I am using 5 crests in the website [Hogwarts crest](), [Gryffindor crest](), [Slytherin crest](), [Hufflepuff crest] and [Ravenclaw crest]().The four house crests give me the colors red, green, yellow and blue for the illumination affect. I chose purple as the background to make the site seem more magical and exciting. I have used a bright yellow for the headings in keeping with the gold of Hogwarts. To give the site a more official feel I found the'Parry Hotter' font which is very similar to the real Harry Potter font.
+I am using 5 crests in the website [Hogwarts crest](), [Gryffindor crest](), [Slytherin crest](), [Hufflepuff crest]() and [Ravenclaw crest]().The four house crests give me the colors red, green, yellow and blue for the illumination affect. I chose purple as the background to make the site seem more magical and exciting. I have used a bright yellow for the headings in keeping with the gold of Hogwarts. To give the site a more official feel I found the'Parry Hotter' font which is very similar to the real Harry Potter font.
 [index_image](), 
 [colour pallet]()
 
