@@ -6,7 +6,28 @@
     font-style: normal;
 }
 
-/* body */
+/*----------------------------------------- colour*/
+.gryffindor-red {
+   border-color: #d11404;
+   border-width: 3px;
+}
+
+.slytherin-green {
+   border-color: #04540c;
+   border-width: 3px;
+}
+
+.hufflpuff-yellow {
+   border-color: #f5cd11;
+   border-width: 3px;
+}
+
+.ravenclaw-blue {
+   border-color: #3078ac;
+   border-width: 3px;
+}
+
+/*------------------------------------------Global*/
 html, body {
    margin: 0;
    padding: 0;
@@ -24,9 +45,13 @@ a {
    color: #fff;
 }
 
+h1 {
+   font-size: 40px;  
+   font-family: "ParryHotter", sans-serif;
+   color: #f5cd11;
+}
 /*------------------------------------------Header*/
 header{
-
    margin: 0;
    min-height: 50px;
    z-index: 10;
@@ -34,11 +59,12 @@ header{
    top: 0;
    width: 100vw;
 }
-.navbar { /* Copied from Whiskey Drop - Coding Institute - modified */
-   margin-bottom: 0;
-   border: 0;
-   width: 100%;
+.navbar-dark {
+   float: right;
+   top:0;
+   border-width: 0 0 1px;
 }
+
 .nav-item {
    font-size: 20px;
    font-weight: 500;
@@ -46,6 +72,10 @@ header{
 .navbar-dark .navbar-nav .nav-link{
    color: #ffffff;
 }
+button.navbar-toggler{
+   float: right;
+}
+
 /*------------------------------------------Footer*/
 footer {
    margin: 0;
@@ -83,12 +113,6 @@ footer ul {
    position: absolute;
 }
 
-h1 {
-   font-size: 48px;  
-   font-family: "ParryHotter", sans-serif;
-   color: #f5cd11;
-}
-
 .welcome{
    padding-bottom: 15px;
    text-align: center;
@@ -101,24 +125,62 @@ h1 {
 }
 /*---------------------------------------Game Page*/
 .house-crest-container{
-   overflow: hidden;
+/*overflow: hidden;*/
+   height: 100vh;
+   padding: 70px 5px 70px 5px;
 }
 
-.game-btn{
-   display: inline-block;
-   width: 25%;
-   height: 25%;
+.right-game-btn{
+   border-radius: 5%;
+   width: 50%;
+   height: 90%;
+   top: 25%;
+   margin-left: 0;
+   margin-right:50%;
+   padding: 15px;
+   justify-items: left;
+   z-index: 2;
+   display: block;
+   opacity: 0.75;
+   transition: all 0.3s ease-in;
+}
+.left-game-btn{
+   border-radius: 5%;
+   width: 50%;
+   height: 90%;
+   top: 25%;
+   margin-left: 50%;
+   margin-right: 0;
+   padding: 15px;
+   justify-items: left;
+   z-index: 2;
+   display: block;
+   opacity: 0.75;
+   transition: all 0.3s ease-in;
+}
+.gryffindor{
+}
+.slytherin{
+}
+.hufflpuff{
+}
+.ravenclaw{
 }
 
-.gryffindor{}
-.slytherin{}
-.hufflpuff{}
-.ravenclaw{}
+/*----------------------------------------Help*/
 
-/*----------------------------------------Footer*/
+/*---------------------------------------About*/
 
-
-/*--------------------------------------------Media Queries*/
+/*---------------------------------Media Queries*/
+@media (max-width:4096px) {
+   .navbar-fixed-top {
+      top:0;
+      border-width: 0 0 1px;
+   }
+   .navbar-toggle {
+      display: block;
+   }
+}
 @media (max-width: 1024px) {
    .school-crest-container{
       padding-top: 25%;
