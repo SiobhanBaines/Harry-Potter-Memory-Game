@@ -15,12 +15,15 @@ The game will randomly light up one of the 4 crests and the player will need to 
 ### *User Stories*
 
 1. **A new visitor to the site**
-
-2. **A returning visitor to the site**
-   
-3. **The site creator**
-
-4. **The interlectual media copyright owner
+I am looking for a game that will help improve my memory, is easy to play and looks fun. The instructions need to easy to access and easy to follow. It might be interesting to know aout the background to the game and its design.
+  
+2. **The site creator**
+I want a game that uses different coloured lights to create a 'copy me' routine. The game must give feedback in a fun way relating to Harry Potter and the Hogwarts houses. 
+* Gryffindor are known their for bravery, helping others and chivalry
+* Slytherin are known for their ambition, cunning, heritage and resourcefulness
+* Hufflepuff are known for their hardwork, patience, loyalty and fair play
+* Ravenclaw are known for their intelligence, knowledge, forward planning and humour.
+Since I am using Harry Potter as the theme I feel it is only right to talk a little about the author of Harry Potter in the about section.
 
 
 
@@ -87,6 +90,20 @@ Below are the links for each piece of clipart:
 
 
 I then used [icolorpalette](https://icolorpalette.com/) to get a colour palette from the image I used for index-image.
+
+# Deployment
+In Gitpod the bottom area of the screen is where git commands are entered.
+
+![image]()
+
+1.	If you have been running the 8000 port you will need to use Ctrl + Z to escape back and use the command entry. This line will appear “gitpod /workspace/Siobhan-Baines-MS2-HP-Game $” allowing commands to be entered.
+2.	Make sure any changes that have been made are save by selecting the ‘File’ tab and ‘Save All’
+3.	Type “git add .” to add all the changes ready to be committed. Remember the full stop because this will add everything that has been save. If only one file has been changed that file name can be entered instead of the full stop
+4.	Type “git commit -m” immediately followed by a description of the change(s) being committed to Github 
+5.	Type “git push” which will push everything to Github
+6.	Open Github and the repository the website is in. To the far right of the menu bar is the Settings tab. Select this and scroll down to “GitHub Pages”
+7.	Under Source if the dropdown menu has “None” select the “master” branch which will bring up the “(root)” folder, and click “Save”
+8.	Your page will now show as published under the GitHub Pages section
 
 ### Lessons learned
 

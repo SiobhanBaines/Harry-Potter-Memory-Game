@@ -14,24 +14,20 @@ The font I have decided to use is ParryHotter created by Anke Arnold in Germany.
 The error I was given was 'GET https://8000-deb9f02d-9615-41c1-acd8-e40a6c9e3634.ws-eu03.gitpod.io/assets/css/assets/fonts/ParryHotter.ttf net::ERR_ABORTED 404'. I could not understand why it was looking in assets/css/assets/fonts so tried other fonts. all gave the same error. Eventually I decided to move the fonts folder into the css folder and the font worked.
 [image]
 
+### Issues with keeping house crests grouped in a square in the centre
+I started with only using col-3 for all sizes but this gave meant the crests reduced in size to being not visible on mobile devices.
+[image] col-3-text
+[image]col-3
+I then changed the column classes for large, medium and small to gradually replace the sides to becoming part of the middle
+[image] col-lg text
+[image] col-lg
+I then added some media query statements which made the crests appear correctly for medium sized decives.
+[image] col-md
+I then changed the order round of the col classes and adjusted the media queries which appears to have created the image I desire. All four crests together in the centre.
+[image] col-swap
 ## User Story One Testing
 
 ## User Story Two Testing
 
-## User Story Three Testing
-
 ## Performance Testing using Lighthouse
 
-# Deployment
-In Gitpod the bottom area of the screen is where git commands are entered.
-
-![image]()
-
-1.	If you have been running the 8000 port you will need to use Ctrl + Z to escape back and use the command entry. This line will appear “gitpod /workspace/Siobhan-Baines-MS2-HP-Game $” allowing commands to be entered.
-2.	Make sure any changes that have been made are save by selecting the ‘File’ tab and ‘Save All’
-3.	Type “git add .” to add all the changes ready to be committed. Remember the full stop because this will add everything that has been save. If only one file has been changed that file name can be entered instead of the full stop
-4.	Type “git commit -m” immediately followed by a description of the change(s) being committed to Github 
-5.	Type “git push” which will push everything to Github
-6.	Open Github and the repository the website is in. To the far right of the menu bar is the Settings tab. Select this and scroll down to “GitHub Pages”
-7.	Under Source if the dropdown menu has “None” select the “master” branch which will bring up the “(root)” folder, and click “Save”
-8.	Your page will now show as published under the GitHub Pages section
