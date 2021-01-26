@@ -13,10 +13,12 @@
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
    <link rel="stylesheet" href="assets/css/fonts/ParryHotter.ttf" type="text/font">
    <link rel="stylesheet" href="assets/css//style.css" type="text/css">
-   <link rel="stylesheet" href="assets/js/index.js" type="text/javascript">
+   <!--<link rel="stylesheet" href="assets/js/index.js" type="text/javascript">-->
+   <script src="assets/js/index.js"></script>
 </head>
 
 <body>
+
    <!-- Help and About pages -->
    <header>
       <div class="container">
@@ -52,32 +54,37 @@
                <h1>Follow the House</h1>
             </div>
          </div>
-         <div class="row top-row">
-            <div class="col-0 col-md-2 col-lg-3">
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-               <input type="image" src="assets/images/gryffindor-crest.png" class="game-btn inline-block gryffindor"
-                  alt="gryffindor Crest">
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-               <input type="image" src="assets/images/slytherin-crest.png" class="game-btn inline-block slytherin"
-                  alt="Slytherin Crest">
-            </div>
-            <div class="col-0 col-md-2 col-lg-3">
-            </div>
-         </div>
          <div class="row">
-            <div class="col-0 col-md-2 col-lg-3">
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-               <input type="image" src="assets/images/hufflepuff-crest.png" class="game-btn inline-block hufflepuff"
-                  alt="Hufflepuff Crest">
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-               <input type="image" src="assets/images/ravenclaw-crest.png" class="game-btn inline-block ravenclaw"
-                  alt="Ravenclaw Crest">
-            </div>
-            <div class="col-0 col-md-2 col-lg-3">
+            <div class="col">
+               <button id="play"><i class="far fa-play-circle"></i></button>
+               <div class="row top-row">
+                  <div class="col-0 col-md-2 col-lg-3">
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                     <input id="gryffindor"  type="image" src="assets/images/gryffindor-crest.png"
+                        class="game-btn inline-block gryffindor gryffindor-red" alt="gryffindor Crest">
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                     <input id="slytherin" type="image" src="assets/images/slytherin-crest.png" class="game-btn inline-block slytherin"
+                        alt="Slytherin Crest">
+                  </div>
+                  <div class="col-0 col-md-2 col-lg-3">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-0 col-md-2 col-lg-3">
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                     <input id="hufflepuff" type="image" src="assets/images/hufflepuff-crest.png"
+                        class="game-btn inline-block hufflepuff" alt="Hufflepuff Crest">
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                     <input id="ravenclaw" type="image" src="assets/images/ravenclaw-crest.png" class="game-btn inline-block ravenclaw"
+                        alt="Ravenclaw Crest">
+                  </div>
+                  <div class="col-0 col-md-2 col-lg-3">
+                  </div>
+               </div>
             </div>
          </div>
       </div>
@@ -92,6 +99,7 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"></script>
+
 
 </body>
 

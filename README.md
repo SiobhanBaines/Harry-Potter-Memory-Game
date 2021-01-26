@@ -57,9 +57,11 @@ I am using 5 crests in the website [Hogwarts crest](), [Gryffindor crest](), [Sl
 
 
 ## Features
-
 ### Existing Features
-
+#### feature 1
+When the home page loads it's position and opacity changes bringing the webpage to life. 
+#### feature 2
+I wanted the transition from the home page to the game page to be softer to appear smoother for the player.
 
 
 ## Technologies Used
@@ -72,6 +74,8 @@ Parry Hotter and Ubuntu.
 
 ## Credits
 J K Rowling originally created the very successful Harry Potter series of books which is the core theme of this game.
+### feature 1
+I found out how to create the Home page movement and opacity from this YouTube video by [dcode](https://www.youtube.com/watch?v=zWB219zf1og)
 
 
 When using Google to find out more information about various parts of my code that were not working as I expected I often used[w3schools](https://www.w3schools.com/default.asp), [stackoverflow](https://stackoverflow.com/questions/tagged/html) and [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/).

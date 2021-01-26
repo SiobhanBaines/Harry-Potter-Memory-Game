@@ -9,7 +9,7 @@
 /*----------------------------------------- colour*/
 .gryffindor-red {
    border-color: #d11404;
-   border-width: 3px;
+   border-width: 20px;
 }
 
 .slytherin-green {
@@ -29,6 +29,7 @@
 
 /*------------------------------------------Global*/
 html, body {
+   animation: fadeIn 500ms;
    margin: 0;
    padding: 0;
    font-family: 'Ubuntu', sans-serif;
@@ -55,6 +56,7 @@ h1 {
    font-family: "ParryHotter", sans-serif;
    color: #f5cd11;
 }
+
 /*------------------------------------------Header*/
 header{
    margin: 0;
@@ -110,6 +112,7 @@ footer ul {
 
 /*---------------------------------------Home Page*/
 .school-crest-container{
+   animation: moveUp 1s; /*feature 1 - dcode */
    max-height: 100vh;
    max-width: 100vw;
    justify-content: center;
@@ -129,6 +132,7 @@ footer ul {
    margin: auto;
    display: block;
 }
+
 /*---------------------------------------Game Page*/
 .house-crest-container{
    max-height: 100vh;
@@ -138,6 +142,26 @@ footer ul {
    align-items: center;
    position: absolute;
 }
+
+#play {
+   margin: 0;
+   padding: 0;
+   border: 3px solid #f5cd11;
+   color:#f5cd11;
+   position: absolute;
+   z-index: 2;
+   left: 0; right: 0; top: 0; bottom: 0; margin: auto; /* center */
+   font-size: 500%;
+   border: none;
+   background: none;
+}
+
+.button:hover {
+	border-radius: 50px;
+	background: #fcad26;
+	color: #fff;
+}
+
 .game-btn {
    border-radius: 5%;
    width: 50%;
@@ -145,7 +169,6 @@ footer ul {
    top: 25%;
    padding: 15px;
    z-index: 2;
-   /*display: block;*/
 }
 
 .gryffindor, .hufflepuff{
@@ -163,6 +186,23 @@ footer ul {
 /*----------------------------------------Help*/
 
 /*---------------------------------------About*/
+/*-----------------------------------Keyframes*/
+/*feature 1 - dcode */
+@keyframes moveUp {
+   from {
+      opacity:0;
+      transform:rotateX(-10deg);
+   }
+   to {
+      opacity:1;
+      transform:rotateX(0);
+   }
+}
+/* feature 2*/
+@keyframes fadeIn {
+  from {opacity:0.5 }
+   to {opacity: 1 }
+}
 
 /*---------------------------------Media Queries*/
 @media (max-width:4096px) {
@@ -184,21 +224,6 @@ footer ul {
    .hogwarts-crest{
       width: 60%;
    }
- /*  .game-btn {
-      border-radius: 5%;
-      width: 80%;
-      height: auto;
-      top: 25%;
-      padding: 15px;
-      z-index: 2;
-      display: block;
-   }
-   .gryffindor, .hufflepuff{
-      margin-left: 0%;
-   }
-   .slytherin, .ravenclaw{
-      margin-right: 0%;
-   }*/
 }
 @media (max-width: 768px) {
    .school-crest-container{
@@ -211,11 +236,11 @@ footer ul {
       padding-top: 10%;
    }
    .hogwarts-crest{  
+      padding-top: 20%;
       width: 70%;
    }
    .game-btn {
       width: 90%;
-
    }
    .gryffindor, .hufflepuff{
       margin-left: 0%;
@@ -223,9 +248,34 @@ footer ul {
    .slytherin, .ravenclaw{
       margin-right: 0%;
    }
+   #play{
+      padding-top: 10%;
+   }
 }
 @media (max-width: 540px) {
-   .school-crest-container{
+   .school-crest-container,
+   .house-crest-container{
+      padding-top: 5%;
+   }
+   h1 {
+      font-size: 34px; 
+   }
+   .hogwarts-crest{
+      width: 80%;
+   }
+   .game-btn {
+      width: 90%;
+   }
+  .gryffindor, .hufflepuff{
+      margin-left: 15%;
+   }
+   .slytherin, .ravenclaw{
+      margin-right: 15%;
+   }
+}
+@media (max-width: 300px) {
+   .school-crest-container,
+   .house-crest-container{
       padding-top: 30%;
    }
    h1 {
@@ -242,5 +292,5 @@ footer ul {
    }
    .slytherin, .ravenclaw{
       margin-right: 15%;
-   }*/
+   }
 }
