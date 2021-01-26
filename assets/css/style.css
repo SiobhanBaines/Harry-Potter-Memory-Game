@@ -7,25 +7,14 @@
 }
 
 /*----------------------------------------- colour*/
-.gryffindor-red {
-   border-color: #d11404;
-   border-width: 20px;
-}
-
-.slytherin-green {
-   border-color: #04540c;
-   border-width: 3px;
-}
-
-.hufflpuff-yellow {
-   border-color: #f5cd11;
-   border-width: 3px;
-}
-
+.gryffindor-red,
+.slytherin-green,
+.hufflpuff-yellow, 
 .ravenclaw-blue {
-   border-color: #3078ac;
-   border-width: 3px;
+   filter:brightness(1.75);
 }
+
+
 
 /*------------------------------------------Global*/
 html, body {
