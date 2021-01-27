@@ -11,7 +11,7 @@
 .slytherin-green,
 .hufflpuff-yellow, 
 .ravenclaw-blue {
-   filter:brightness(1.75);
+   filter:brightness(2);
 }
 
 
@@ -171,6 +171,19 @@ footer ul {
    justify-items: left;
 }
 
+.lost{
+   margin: 0;
+   padding: 30% 0;
+   width: 30%;
+   height: auto;
+   text-align: center;
+   justify-content: center;
+   position: relative;
+   z-index: 2;
+   font-size: 100%;  
+   font-family: "ParryHotter", sans-serif;
+   color: #f5cd11;
+}
 
 /*----------------------------------------Help*/
 
