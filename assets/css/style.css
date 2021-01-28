@@ -8,7 +8,7 @@
 /*----------------------------------------- colour*/
 .gryffindor-red,
 .slytherin-green,
-.hufflpuff-yellow, 
+.hufflepuff-yellow, 
 .ravenclaw-blue{
     filter:brightness(2);
 }
@@ -127,8 +127,9 @@ footer ul{
     color:#f5cd11;
     position: absolute;
     z-index: 2;
-    left: 0; right: 0; top: 0; bottom: 0; margin: auto; /* center */
+    left: 0; right: 0; top: 20%; bottom: 0; margin: auto; /* center */
     font-size: 500%;
+    outline: none;
     border: none;
     background: none;
 }
@@ -137,37 +138,62 @@ footer ul{
 	background: #fcad26;
     color: #fff;
 }
-.game-btn{
-    border-radius: 5%;
-    width: 50%;
+.game-btn.gryffindor,
+.game-btn.hufflepuff{
+    width: 35%;
     height: auto;
     top: 25%;
     padding: 15px;
     z-index: 2;
+    outline: none;
+    border: none;
 }
-.gryffindor, .hufflepuff{
+.game-btn.slytherin,
+.game-btn.ravenclaw{
+    width: 80%;
+    height: auto;
+    top: 25%;
+    padding: 15px;
+    z-index: 2;
+    outline: none;
+    border: none;
+}
+#gryffindor,
+#hufflepuff{
+    margin-left: 70%;
+}
+#slytherin, 
+#ravenclaw{
     margin-left: 50%;
-    margin-right: 0;
-    justify-items: right;
 }
-.slytherin, .ravenclaw{
-    margin-left: 0;
-    margin-right: 50%;
-    justify-items: left;
+.board {
+    padding: 10% 5%;
+}
+#message-board{
+    /*display: none;*/
+    border: 2px solid #000;
+    border-radius: 2.5%;
+    height: auto;
+    width: 100%;
+    size: 1%;
+    position: relative;
 }
 
 .lost{
-    margin: 0;
-    padding: 30% 0;
-    width: 30%;
-    height: auto;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-    font-size: 100%;  
-    font-family: "ParryHotter", sans-serif;
+    /*display: none;*/
+    margin-top: 27%;
+    padding: 15%;
     color: #f5cd11;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    align-items: center;
+    left: 0; right: 0; top: 0; bottom: 0;  /* center */
+    border: none;
+    background: none;
+    font-size: 150%;  
+    font-weight: 400;
+    font-family: "ParryHotter", sans-serif;
 }
 /*----------------------------------------Help*/
 #help{
@@ -176,12 +202,12 @@ footer ul{
 
 .instructions{
     width: 80%;
-    padding-left: 12%;
+    padding-left: 33%;
     margin: 0;
     margin-top: 0.5%;
-    text-align: center;
+    text-align: left;
     font-family: "ubunto", sans-serif;
-    font-size: 100%;
+    font-size: 110%;
     font-weight:100 ;
 }
 /*---------------------------------------About*/
@@ -190,19 +216,19 @@ footer ul{
 }
 .source{
     font-family: "ubunto", sans-serif;
-    font-size: 50%;
+    font-size: 90%;
     padding-left: 15%;
     font-weight:100 ;
 }
 .subject{
-    font-size: 150%;
+    font-size: 175%;
     font-family: "ParryHotter", sans-serif;
     color: #f5cd11;
     padding: 0%;
     margin: 0%;
 }
 .subjectJK{
-    font-size: 125%;
+    font-size: 150%;
     font-family: "ParryHotter", sans-serif;
     color: #f5cd11;
     padding: 0%;
@@ -212,7 +238,7 @@ footer ul{
     width: 90%;
     margin-left: 5%;
     font-family: "ubunto", sans-serif;
-    font-size: 70%;
+    font-size: 110%;
     font-weight:100 ;
 }
 /*-----------------------------------Keyframes*/
@@ -248,29 +274,16 @@ footer ul{
     }
 }
 @media (max-width: 1024px){
-    .school-crest-container{
-        padding-top: 25%;
+    .school-crest-container,
+    .house-crest-container{
+        padding-top: 10%;
     }
     h1{ 
+        
         padding-bottom: 10%;
     }
     .hogwarts-crest{
         width: 60%;
-    }
-}
-@media (max-width: 768px){
-    .school-crest-container{
-        padding-top: 20%;
-    }
-    h1{
-        padding: 10% 0;
-    }
-    .top-row{
-        padding-top: 10%;
-    }
-    .hogwarts-crest{  
-        padding-top: 20%;
-        width: 70%;
     }
     .game-btn {
         width: 90%;
@@ -282,25 +295,60 @@ footer ul{
         margin-right: 0%;
     }
     #play{
-        padding-top: 10%;
+        padding-top: 0%;
     }
 }
-@media (max-width: 540px){
+@media (max-width: 768px){
     .school-crest-container,
     .house-crest-container{
         padding-top: 5%;
     }
     h1{
+        padding-top: 10%;
+    }
+    .top-row{
+        padding-top: 10%;
+    }
+    .hogwarts-crest{  
+        padding-top: 20%;
+        width: 60%;
+    }
+
+    .game-btn.gryffindor,
+    .game-btn.hufflepuff{
+        width: 50%;
+    }
+    .game-btn.slytherin,
+    .game-btn.ravenclaw{
+        width: 50%;
+    }
+    #gryffindor, #hufflepuff{
+        margin-left: 30%;
+    }
+    #slytherin, #ravenclaw{
+        margin-left: 30%;
+    }
+    #play{
+        padding-top: -50%;
+    }
+}
+@media (max-width: 540px){
+    .school-crest-container,
+    .house-crest-container{
+        padding-top: 15%;
+    }
+    h1{
         font-size: 34px; 
     }
     .hogwarts-crest{
-        width: 80%;
+        width: 70%;
+        padding-top: 10%;
     }
     .game-btn {
-        width: 90%;
+        width: 60%;
     }
     .gryffindor, .hufflepuff{
-        margin-left: 15%;
+        margin-left: 35%;
     }
     .slytherin, .ravenclaw{
         margin-right: 15%;
