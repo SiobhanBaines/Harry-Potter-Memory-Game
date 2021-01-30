@@ -123,8 +123,9 @@ $(document).ready(function () {
     };
 /*------function to let the player know they have won--*/
     function winnerMessage(){
-        $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw').hide();
+        $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').hide();
         $('#dobby').show();
-        $('section>div>div:last>div:first').append(`<p class="win">Dobby this you are very clever</p>`);
+        $('section>div').append(`<p class="win">Dobby thinks you are very clever</p>`);
+      /*   $('section>div>div:first>div:last').append(`<p class="win">Dobby thinks you are very clever</p>`);*/
     };
 });
