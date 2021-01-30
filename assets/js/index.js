@@ -111,10 +111,15 @@ $(document).ready(function () {
         crestArray[j];
         switch (winningCrest) {
             case 'g':
+
                 $(`section`).append.fadeIn(`<p class="lost">Brave Gryffindor has beaten you</p>`);
                 break;
             case 's':
-                $(`section`).append.fadeIn(`<p class="lost">You have been conquered by cunning Slytherin</p>`);
+/*                $(`section`).append.fadeIn(`<p class="lost">You have been conquered by cunning Slytherin</p>`);*/
+                $('section.div.div[1]').append.fadeIn(`         <div class="col-lg-4 col-md-12 board">
+                    <img id="message-board" src="assets/images/background-wood.png" alt="message-board">
+                    <p class="lost">You have been conquered by cunning Slytherin</p>
+                </div>`);
                 break;
             case 'h':
                 $(`section`).append.fadeIn(`<p class="lost">Hufflepuff patience presides</p>`);
