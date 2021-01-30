@@ -18,7 +18,50 @@ $(document).ready(function () {
 
         console.log(crest);
         console.log(crestArray);
-        /*----------- light up chosen crest----------*/
+
+        lightUp(crest);
+  
+    });
+
+    /*-----Load playerArray for validation-------*/
+    $('.gryffindor').click(function gryffindor() {
+        playerArray.push('g');
+        validation();
+    });
+
+    $('.slytherin').click(function slytherin() {
+        playerArray.push('s');
+        validation();
+    });
+
+    $('.hufflepuff').click(function hufflepuff() {
+        playerArray.push('h');
+        validation();
+    });
+
+    $('.ravenclaw').click(function ravenclaw() {
+        playerArray.push('r');
+        validation();
+    });
+
+    function validation() {
+        console.log(j);
+        console.log('playerArray[j]:', playerArray[j]);
+        console.log('crestArray[j]:', crestArray[j]);
+        if (playerArray[j] !== crestArray[j]) {
+            winningCrest = crestArray[j];
+            houseMessage();
+        } else {
+            if (j === i &
+                playerArray.length === crestArray.length){
+                winnerMessage();
+            }
+        };
+        j++;
+    };
+
+/*------function to light up a house crest----------*/
+    function lightUp(crest) {   
         switch (crest) {
             case 'g':
                 var element = document.getElementById("gryffindor");
@@ -55,80 +98,33 @@ $(document).ready(function () {
             default:
                 break;
         }
-    });
+    };
 
-    /*-------------Validate Selected Crest-------------*/
-    $('.gryffindor').click(function gryffindor() {
-        playerArray.push('g');
-        console.log(j);
-        console.log('playerArray[j]:', playerArray[j]);
-        console.log('crestArray[j]:', crestArray[j]);
-        if (playerArray[j] !== crestArray[j]) {
-            winningCrest = crestArray[j];
-            houseMessage();
-        };
-        j++;
-    });
-
-    $('.slytherin').click(function slytherin() {
-        playerArray.push('s');
-        console.log(j);
-        console.log('playerArray[j]:', playerArray[j]);
-        console.log('crestArray[j]:', crestArray[j]);
-        if (playerArray[j] !== crestArray[j]) {
-            winningCrest = crestArray[j];
-            houseMessage();
-        };
-        j++;
-    });
-
-    $('.hufflepuff').click(function hufflepuff() {
-        playerArray.push('h');
-        console.log(j);
-        console.log('playerArray[j]:', playerArray[j]);
-        console.log('crestArray[j]:', crestArray[j]);
-        if (playerArray[j] !== crestArray[j]) {
-            winningCrest = crestArray[j];
-            houseMessage();
-        };
-        j++;
-    });
-
-    $('.ravenclaw').click(function ravenclaw() {
-        playerArray.push('r');
-        console.log(j);
-        console.log('playerArray[j]:', playerArray[j]);
-        console.log('crestArray[j]:', crestArray[j]);
-        if (playerArray[j] !== crestArray[j]) {
-            winningCrest = crestArray[j];
-            houseMessage();
-        };
-        j++;
-    });
-
-
+/*------function to determine which house won--------*/
     function houseMessage() {
         crestArray[j];
+        $('#message-board').show();
         switch (winningCrest) {
             case 'g':
-
-                $(`section`).append.fadeIn(`<p class="lost">Brave Gryffindor has beaten you</p>`);
+                $('section>div>div>div:last').append(`<p class="lost">Gryffindor's bravery is bountious</p>`);
                 break;
             case 's':
-/*                $(`section`).append.fadeIn(`<p class="lost">You have been conquered by cunning Slytherin</p>`);*/
-                $('section.div.div[1]').append.fadeIn(`         <div class="col-lg-4 col-md-12 board">
-                    <img id="message-board" src="assets/images/background-wood.png" alt="message-board">
-                    <p class="lost">You have been conquered by cunning Slytherin</p>
-                </div>`);
+                $('section>div>div>div:last').append(`<p class="lost">Slytherin's cunning conquers all</p>`);
                 break;
             case 'h':
-                $(`section`).append.fadeIn(`<p class="lost">Hufflepuff patience presides</p>`);
+                $('section>div>div>div:last').append(`<p class="lost">Hufflepuff's patience prevails</p>`);
                 break;
             case 'r':
-                $(`section`).append.fadeIn(`<p class="lost">Ravenclaw's wisdom wins</p>`);
+                $('section>div>div>div:last').append(`<p class="lost">Ravenclaw's wisdom wins</p>`);
                 break;
             default:
                 break;
         };
+    };
+/*------function to let the player know they have won--*/
+    function winnerMessage(){
+        $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw').hide();
+        $('#dobby').show();
+        $('section>div>div:last>div:first').append(`<p class="win">Dobby this you are very clever</p>`);
     };
 });

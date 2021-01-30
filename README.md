@@ -62,7 +62,8 @@ I am using 5 crests in the website [Hogwarts crest](), [Gryffindor crest](), [Sl
 When the home page loads it's position and opacity changes bringing the webpage to life. 
 #### feature 2
 I wanted the transition from the home page to the game page to be softer to appear smoother for the player.
-
+#### feature 3
+When the play fails to follow the pattern created by the crests lighting up a message relating to the last crest in the pattern pops up on a wooden board in yellow with a white boarder.
 
 ## Technologies Used
 CSS3, HMTL5, Javscript, JQuery, Bootstrap Framework, Google, Fontawesome
@@ -76,6 +77,9 @@ Parry Hotter and Ubuntu.
 J K Rowling originally created the very successful Harry Potter series of books which is the core theme of this game.
 ### feature 1
 I found out how to create the Home page movement and opacity from this YouTube video by [dcode](https://www.youtube.com/watch?v=zWB219zf1og)
+### feature 3
+My mentor Kyeza Arnold suggested a woodne background for the pop-up message. I found this more difficult to read and wanted a border around the font to make it stand out more. I added a black boarder and a red shadow. [css-font-border](https://stackoverflow.com/questions/2570972/css-font-border)
+
 
 
 When using Google to find out more information about various parts of my code that were not working as I expected I often used[w3schools](https://www.w3schools.com/default.asp), [stackoverflow](https://stackoverflow.com/questions/tagged/html) and [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/).
