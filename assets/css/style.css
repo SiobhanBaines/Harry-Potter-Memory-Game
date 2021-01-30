@@ -123,24 +123,29 @@ footer ul{
 #play{
     margin: 0;
     padding: 0;
+   /* height: 30%;*/
     border: 3px solid #f5cd11;
     color:#f5cd11;
     position: absolute;
     z-index: 2;
-    left: 0; right: 0; top: 20%; bottom: 0; margin: auto; /* center */
-    font-size: 500%;
+    left: 50%; right: 0; top: 0%; bottom: 0; margin: auto; /* center */
+    font-size: 400%;
     outline: none;
     border: none;
     background: none;
 }
-.button:hover{
+.game{
+    padding-top: 0%;
+    padding-left: 30%;
+}
+/*.button:hover{
     border-radius: 50px;
 	background: #fcad26;
     color: #fff;
-}
+}*/
 .game-btn.gryffindor,
 .game-btn.hufflepuff{
-    width: 35%;
+    width: 90%;
     height: auto;
     top: 25%;
     padding: 15px;
@@ -150,7 +155,7 @@ footer ul{
 }
 .game-btn.slytherin,
 .game-btn.ravenclaw{
-    width: 80%;
+    width: 90%;
     height: auto;
     top: 25%;
     padding: 15px;
@@ -160,11 +165,11 @@ footer ul{
 }
 #gryffindor,
 #hufflepuff{
-    margin-left: 70%;
+    margin-left: 40%;
 }
 #slytherin, 
 #ravenclaw{
-    margin-left: 50%;
+    margin-left: 5%;
 }
 .board {
     padding: 10% 5%;
@@ -176,23 +181,26 @@ footer ul{
     height: auto;
     width: 100%;
     size: 1%;
+    z-index: 1;
     position: relative;
 }
 
 .lost{
     /*display: none;*/
-    margin-top: 27%;
-    padding: 15%;
+    /*margin-top: 15%;
+    padding: 15%;*/
+    display: block;
+    width: 60%;
     color: #f5cd11;
     position: absolute;
     z-index: 2;
     text-align: center;
     align-items: center;
-    left: 0; right: 0; top: 0; bottom: 0;  /* center */
+    left: 20%; right: 0; top: 32%; bottom: 0;  /* center */
     border: none;
     background: none;
     font-size: 150%;  
-    font-weight: 400;
+    font-weight: 300;
     font-family: "ParryHotter", sans-serif;
 }
 /*----------------------------------------Help*/
@@ -288,12 +296,12 @@ footer ul{
     .game-btn {
         width: 90%;
     }
-    .gryffindor, .hufflepuff{
+ /*   #gryffindor, #hufflepuff{
         margin-left: 0%;
     }
-    .slytherin, .ravenclaw{
+    #slytherin, #ravenclaw{
         margin-right: 0%;
-    }
+    } */
     #play{
         padding-top: 0%;
     }
@@ -313,23 +321,37 @@ footer ul{
         padding-top: 20%;
         width: 60%;
     }
+    .game{
+        padding-left: 0;
+    }
 
     .game-btn.gryffindor,
     .game-btn.hufflepuff{
-        width: 50%;
+        width: 60%;
     }
     .game-btn.slytherin,
     .game-btn.ravenclaw{
-        width: 50%;
+        width: 60%;
     }
     #gryffindor, #hufflepuff{
-        margin-left: 30%;
+        margin-left: 50%;
     }
     #slytherin, #ravenclaw{
-        margin-left: 30%;
+        margin-left: 10%;
     }
     #play{
-        padding-top: -50%;
+        padding-top: 8%;
+        margin-left: 0%;
+    }
+    #message-board{
+        border: none;
+        padding-left: 20%;
+        width: 90%;
+        height: 55%;
+    }
+    .lost{
+        left: 25%; top: 25%;
+        font-size: 200%;
     }
 }
 @media (max-width: 540px){
@@ -344,14 +366,29 @@ footer ul{
         width: 70%;
         padding-top: 10%;
     }
-    .game-btn {
-        width: 60%;
+    .game{
+        padding-left: 0;
     }
-    .gryffindor, .hufflepuff{
+
+    .game-btn.gryffindor,
+    .game-btn.hufflepuff{
+        width: 75%;
+    }
+    .game-btn.slytherin,
+    .game-btn.ravenclaw{
+        width: 75%;
+    }
+    #gryffindor, #hufflepuff{
         margin-left: 35%;
     }
-    .slytherin, .ravenclaw{
+    #slytherin, #ravenclaw{
         margin-right: 15%;
+    }
+    #play{
+        margin-left: -5%;
+    }
+    .lost{
+        font-size: 125%;
     }
 }
 @media (max-width: 300px){
@@ -366,12 +403,27 @@ footer ul{
         width: 80%;
     }
     .game-btn{
-        width: 90%;
+        width: 100%;
     }
-    .gryffindor, .hufflepuff{
-        margin-left: 15%;
+   /* #gryffindor, #hufflepuff{
+        margin-left: 25%;
     }
-    .slytherin, .ravenclaw{
+    #slytherin, #ravenclaw{
         margin-right: 15%;
+    }*/
+    /*    .game-btn.gryffindor,
+    .game-btn.hufflepuff{
+        width: 75%;
+    }
+   /* .game-btn.slytherin,
+    .game-btn.ravenclaw{
+        width: 75%;
+    }*/
+
+    #play{
+        margin-left: -7%;
+    }
+    .lost{
+        font-size: 100%;
     }
 }
