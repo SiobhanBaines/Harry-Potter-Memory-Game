@@ -1,27 +1,47 @@
 /*---------------Global variables-------------*/
 var i = 0;
 var j = 0;
+var nextLevel=false;
+var start=true;
 var delay = 1000;
 var playerArray = [];
 var crestArray = [];
 var winningCrest = "";
+let crests = ['g', 's', 'h', 'r'];
 
-$(document).ready(function () {
+/*$(document).ready(function() {*/
 
     /*---------------Begin the Game----------------*/
     $('#play').click(function playGame() {
         $("#play").hide();
+               if (nextLevel && !start){
+            let x = i++;
+        } else if (!nextLevel && start) {
+            i = 0;
+            x=0;
+        }
 
-        let crests = ['g', 's', 'h', 'r'];
         let crest = crests[Math.floor(Math.random() * crests.length)];
         crestArray.push(crest);
 
         console.log(crest);
         console.log(crestArray);
 
-        lightUp(crest);
-  
+        lightUp(crest);  
     });
+
+
+
+    /*---------reset to begin the game again -------*/
+    $('#message-board').click(function start(){
+        $('#message-board').hide();
+        var message = document.getElementsByClassName('lost')
+        message.remove();
+        $('#play').show();
+        nextLevel=false;
+        start=true;
+        playGane();
+});
 
     /*-----Load playerArray for validation-------*/
     $('.gryffindor').click(function gryffindor() {
@@ -43,7 +63,9 @@ $(document).ready(function () {
         playerArray.push('r');
         validation();
     });
-
+  /*  function play() {
+ 
+    };*/
     function validation() {
         console.log(j);
         console.log('playerArray[j]:', playerArray[j]);
@@ -120,12 +142,36 @@ $(document).ready(function () {
             default:
                 break;
         };
+
     };
 /*------function to let the player know they have won--*/
     function winnerMessage(){
         $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').hide();
         $('#dobby').show();
         $('section>div').append(`<p class="win">Dobby thinks you are very clever</p>`);
-      /*   $('section>div>div:first>div:last').append(`<p class="win">Dobby thinks you are very clever</p>`);*/
     };
-});
+
+
+/*
+});*/
+
+    /*------ reset for next level of game -----------*/ 
+    /*$(document).ready(function(){
+    $('#dobby').click(function nextLevel(){*/
+        function nextLevel() {
+        $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').show();
+        $('#dobby').hide();
+        var message = document.getElementsByClassName(".win");
+        message.remove();
+        nextLevel=true;
+        start=false;
+        playGame();
+    };
+    document.getElementById('play').addEventListener('click', nextLevel);
+    document.getElementById('dobby').addEventListener('click', playGame);
+    
+    document.getElementById('message-board').addEventListener('click', start);
+   /* document.getElementById('dobby').addEventListener('click', nextLevel);
+    document.getElementById('dobby').addEventListener('click', nextLevel);
+    document.getElementById('dobby').addEventListener('click', nextLevel);
+    document.getElementById('dobby').addEventListener('click', nextLevel);*/
