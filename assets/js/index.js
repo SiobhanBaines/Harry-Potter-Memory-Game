@@ -30,31 +30,30 @@ let crests = ['g', 's', 'h', 'r'];
         console.log(crest);
         console.log(crestArray);
 
+        for (i=0; i<crestArray.length; i++){
         lightUp(crest);  
-
-            
-/*-----Load playerArray for validation-------*/
-        $('.gryffindor').click(function gryffindor() {
-            playerArray.push('g');
-        });
-
-        $('.slytherin').click(function slytherin() {
-            playerArray.push('s');
-        });
-
-        $('.hufflepuff').click(function hufflepuff() {
-            playerArray.push('h');
-        });
-
-        $('.ravenclaw').click(function ravenclaw() {
-            playerArray.push('r');  
-        });
-
-
-        for (j=0; crestArray.length; j++){
-        validation();
         };    
+            
+        for (j=0; j<crestArray.length; j++){
+/*-----Load playerArray for validation-------*/
+            $('.gryffindor').click(function gryffindor() {
+                playerArray.push('g');
+            });
 
+            $('.slytherin').click(function slytherin() {
+                playerArray.push('s');
+            });
+
+            $('.hufflepuff').click(function hufflepuff() {
+                playerArray.push('h');
+            });
+
+            $('.ravenclaw').click(function ravenclaw() {
+                playerArray.push('r');  
+            });
+        };
+
+        validation();
 
     };
 
@@ -106,16 +105,19 @@ let crests = ['g', 's', 'h', 'r'];
         console.log(i);
         console.log('playerArray[j]:', playerArray[j]);
         console.log('crestArray[j]:', crestArray[j]);
-        if (playerArray[j] !== crestArray[j]) {
+        console.log('playerArray:', playerArray);
+        console.log('crestArray:', crestArray);
+        if (playerArray !== crestArray){
+       /* if (playerArray[j] !== crestArray[j]) {*/
             winningCrest = crestArray[j];
             houseMessage();
         } else {
-            if (j === i &
-                playerArray.length === crestArray.length){
+            /*if (j === i &
+                playerArray.length === crestArray.length){*/
                 winnerMessage();
-            }
+           /* }*/
         };
-        j++;
+       /* j++;*/
     };
 
 
