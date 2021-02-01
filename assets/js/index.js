@@ -9,77 +9,53 @@ var crestArray = [];
 var winningCrest = "";
 let crests = ['g', 's', 'h', 'r'];
 
-/*$(document).ready(function() {*/
 
     /*---------------Begin the Game----------------*/
-    $('#play').click(function playGame() {
+    $('#play').click(function start() {
         $("#play").hide();
-               if (nextLevel && !start){
-            let x = i++;
-        } else if (!nextLevel && start) {
+         if (!nextLevel && start) {
             i = 0;
-            x=0;
+            j = 0;
         }
+        playGame();
+  
+    });
+
+    function playGame(){
 
         let crest = crests[Math.floor(Math.random() * crests.length)];
         crestArray.push(crest);
+        i = crestArray.length - 1;
 
         console.log(crest);
         console.log(crestArray);
 
         lightUp(crest);  
-    });
+
+            
+/*-----Load playerArray for validation-------*/
+        $('.gryffindor').click(function gryffindor() {
+            playerArray.push('g');
+        });
+
+        $('.slytherin').click(function slytherin() {
+            playerArray.push('s');
+        });
+
+        $('.hufflepuff').click(function hufflepuff() {
+            playerArray.push('h');
+        });
+
+        $('.ravenclaw').click(function ravenclaw() {
+            playerArray.push('r');  
+        });
 
 
-
-    /*---------reset to begin the game again -------*/
-    $('#message-board').click(function start(){
-        $('#message-board').hide();
-        var message = document.getElementsByClassName('lost')
-        message.remove();
-        $('#play').show();
-        nextLevel=false;
-        start=true;
-        playGane();
-});
-
-    /*-----Load playerArray for validation-------*/
-    $('.gryffindor').click(function gryffindor() {
-        playerArray.push('g');
+        for (j=0; crestArray.length; j++){
         validation();
-    });
+        };    
 
-    $('.slytherin').click(function slytherin() {
-        playerArray.push('s');
-        validation();
-    });
 
-    $('.hufflepuff').click(function hufflepuff() {
-        playerArray.push('h');
-        validation();
-    });
-
-    $('.ravenclaw').click(function ravenclaw() {
-        playerArray.push('r');
-        validation();
-    });
-  /*  function play() {
- 
-    };*/
-    function validation() {
-        console.log(j);
-        console.log('playerArray[j]:', playerArray[j]);
-        console.log('crestArray[j]:', crestArray[j]);
-        if (playerArray[j] !== crestArray[j]) {
-            winningCrest = crestArray[j];
-            houseMessage();
-        } else {
-            if (j === i &
-                playerArray.length === crestArray.length){
-                winnerMessage();
-            }
-        };
-        j++;
     };
 
 /*------function to light up a house crest----------*/
@@ -122,6 +98,28 @@ let crests = ['g', 's', 'h', 'r'];
         }
     };
 
+
+
+
+    function validation() {
+        console.log(j);
+        console.log(i);
+        console.log('playerArray[j]:', playerArray[j]);
+        console.log('crestArray[j]:', crestArray[j]);
+        if (playerArray[j] !== crestArray[j]) {
+            winningCrest = crestArray[j];
+            houseMessage();
+        } else {
+            if (j === i &
+                playerArray.length === crestArray.length){
+                winnerMessage();
+            }
+        };
+        j++;
+    };
+
+
+
 /*------function to determine which house won--------*/
     function houseMessage() {
         crestArray[j];
@@ -151,27 +149,37 @@ let crests = ['g', 's', 'h', 'r'];
         $('section>div').append(`<p class="win">Dobby thinks you are very clever</p>`);
     };
 
+       /*---------reset to begin the game again -------*/
+    $(document).on('click','.board', function reStart(){
+        $('#message-board').hide();
+        let message = document.getElementsByTagName('p')[0];
+        message.remove();
+        $('#play').show();
+        nextLevel=false;
+        start=true;
 
-/*
-});*/
+        playGame();
+    });
 
-    /*------ reset for next level of game -----------*/ 
-    /*$(document).ready(function(){
-    $('#dobby').click(function nextLevel(){*/
-        function nextLevel() {
+
+    $(document).on('click', '#dobby', function nextLevel(){
+
         $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').show();
         $('#dobby').hide();
-        var message = document.getElementsByClassName(".win");
+        let message = document.getElementsByTagName('p')[0];
+        console.log(message);
         message.remove();
         nextLevel=true;
         start=false;
+
         playGame();
-    };
-    document.getElementById('play').addEventListener('click', nextLevel);
-    document.getElementById('dobby').addEventListener('click', playGame);
+    });
+
     
-    document.getElementById('message-board').addEventListener('click', start);
-   /* document.getElementById('dobby').addEventListener('click', nextLevel);
-    document.getElementById('dobby').addEventListener('click', nextLevel);
-    document.getElementById('dobby').addEventListener('click', nextLevel);
-    document.getElementById('dobby').addEventListener('click', nextLevel);*/
+
+
+
+
+    
+   
+ 
