@@ -35,6 +35,8 @@ function playGame() {
 
     lightUp();
 
+    console.log('playerArray', playerArray);
+
     playerSelect();
 
 
@@ -55,38 +57,38 @@ function lightUp() {
         switch (crest) {
             case 'g':
                 var element = document.getElementById("gryffindor");
-                    element.classList.add("gryffindor-red");
+                    element.classList.add("lightUp");
                 console.log('delay', delay);
                 setTimeout(function () {                
                     element = document.getElementById("gryffindor");
-                element.classList.remove('gryffindor-red')
+                element.classList.remove("lightUp")
                 }, delay);
                 break;
             case 's':
                 element = document.getElementById("slytherin");
-                element.classList.add("slytherin-green");
+                element.classList.add("lightUp");
                 console.log('delay', delay);     
                 setTimeout(function () {           
                     element = document.getElementById("slytherin");
-                    element.classList.remove("slytherin-green")
+                    element.classList.remove("lightUp")
                 }, delay);
                 break;
             case 'h':
                 element = document.getElementById("hufflepuff");
-                element.classList.add("hufflepuff-yellow");
+                element.classList.add("lightUp");
                 console.log('delay', delay);
                 setTimeout(function () {
                     element = document.getElementById("hufflepuff");
-                    element.classList.remove("hufflepuff-yellow")
+                    element.classList.remove("lightUp")
                 }, delay);
                 break;
             case 'r':
                 element = document.getElementById("ravenclaw");
-                element.classList.add("ravenclaw-blue");
+                element.classList.add("lightUp");
                 console.log('delay', delay);
                 setTimeout(function () {                
                     element = document.getElementById("ravenclaw");
-                    element.classList.remove("ravenclaw-blue")
+                    element.classList.remove("lightUp")
                 }, delay);
                 break;
             default:
@@ -99,22 +101,25 @@ function playerSelect() {
 
     $('.game-btn').click(function selectHouse() {
         var house = event.target.id;
-        switch (house) {
-            case 'gryffindor':
-                playerArray.push('g');
-                break;
-            case 'slytherin':
-                playerArray.push('s');
-                break;
-            case 'hufflepuff':
-                playerArray.push('h');
-                break;
-            case 'ravenclaw':
-                playerArray.push('r');
-                break;
-            default:
-                break;
+        console.log('before if');
+        if (house === 'gryffindor'){
+            console.log('pA b push g', playerArray);
+            playerArray.push('g');
+            console.log('pA a push g', playerArray);
+        } else if (house === 'slytherin'){
+            console.log('pA b push s', playerArray);
+            playerArray.push('s');
+            console.log('pA a push s', playerArray);
+        } else if (house === 'hufflepuff'){
+            console.log('pA b push h', playerArray);
+            playerArray.push('h');
+            console.log('pA a push h', playerArray);
+        } else if (house === 'ravenclaw'){
+            console.log('pA b push r', playerArray);
+            playerArray.push('r');
+            console.log('pA a push r', playerArray);
         };
+        console.log('after if', playerArray)
         if (crestArray.length === playerArray.length) {
             j = playerArray.length - 1;
             validation();
@@ -122,6 +127,41 @@ function playerSelect() {
     });
 
 };
+
+     /*   switch (house) {
+            case 'gryffindor':
+                console.log('pA b g', playerArray);
+                console.log('j',j);
+                playerArray.insert(j,'g');
+           /*     playerArray.push('g');
+                console.log('pA a g', playerArray);*/
+          /*      break;
+            case 'slytherin':
+                console.log('pA b s', playerArray);
+                console.log('j',j);
+                playerArray.insert(j,'s')
+            /*    playerArray.push('s');
+                console.log('pA a s', playerArray);*/
+       /*         break;
+            case 'hufflepuff':
+                console.log('pA b h', playerArray);
+                console.log('j',j);
+                playerArray.insert(j,'h')
+             /*   playerArray.push('h');
+                console.log('pA a h', playerArray);*/
+    /*            break;
+            case 'ravenclaw':
+                console.log('pA b r', playerArray);
+                console.log('j',j);
+                playerArray.insert(j,'r')
+             /*   playerArray.push('r');
+                console.log('pA a r', playerArray);*/
+    /*            break;
+            default:
+                break;
+        };*/
+
+
 /* var myFunction = function () {
      var att = this.getAttribute()
  }
@@ -205,19 +245,20 @@ function validation() {
 /*------function to determine which house won-------*/
 function houseMessage() {
     crestArray[j];
+    $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').hide();
     $('#message-board').show();
     switch (winningCrest) {
         case 'g':
-            $('section>div>div>div:last').append(`<p class="lost">Gryffindor's bravery is bountious</p>`);
+            $('section>div>div:last>div:first').append(`<p class="lost">Gryffindor's bravery is bountious</p>`);
             break;
         case 's':
-            $('section>div>div>div:last').append(`<p class="lost">Slytherin's cunning conquers all</p>`);
+            $('section>div>div:last>div:first').append(`<p class="lost">Slytherin's cunning conquers all</p>`);
             break;
         case 'h':
-            $('section>div>div>div:last').append(`<p class="lost">Hufflepuff's patience prevails</p>`);
+            $('section>div>div:last>div:first').append(`<p class="lost">Hufflepuff's patience prevails</p>`);
             break;
         case 'r':
-            $('section>div>div>div:last').append(`<p class="lost">Ravenclaw's wisdom wins</p>`);
+            $('section>div>div:last>div:first').append(`<p class="lost">Ravenclaw's wisdom wins</p>`);
             break;
         default:
             break;
@@ -230,7 +271,7 @@ function houseMessage() {
 function winnerMessage() {
     $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').hide();
     $('#dobby').show();
-    $('section>div').append(`<p class="win">Dobby thinks you are very clever</p>`);
+    $('section>div>div:last>div:first').append(`<p class="win">Dobby thinks you are very clever</p>`);
     playerArray.length = 0;
 };
 
