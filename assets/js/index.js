@@ -36,23 +36,17 @@ function playGame() {
 
     if (crestArray.length !== playerArray.length)
     {
-        console.log('cA', crestArray)
+        console.log('cA', crestArray);
         console.log('pA', playerArray);
-    };
+    }
     
         playerSelect();
-        
-            if (crestArray.length === playerArray.length) {
-            j = playerArray.length - 1;
-            validation();
-        };
-};
+}
 /*------function to light up a house crest----------*/
 function lightUp() {
 
     for (l = 0; l < crestArray.length; l++) {
-;
-        crest = crestArray[l];
+        let crest = crestArray[l];
         delay = delay + increment;
 
         switch (crest) {
@@ -61,7 +55,7 @@ function lightUp() {
                 element.classList.add("lightUp");
                 setTimeout(function () {
                     element = document.getElementById("gryffindor");
-                    element.classList.remove("lightUp")
+                    element.classList.remove("lightUp");
                 }, delay);
                 break;
             case 's':
@@ -69,7 +63,7 @@ function lightUp() {
                 element.classList.add("lightUp");
                 setTimeout(function () {
                     element = document.getElementById("slytherin");
-                    element.classList.remove("lightUp")
+                    element.classList.remove("lightUp");
                 }, delay);
                 break;
             case 'h':
@@ -77,7 +71,7 @@ function lightUp() {
                 element.classList.add("lightUp");
                 setTimeout(function () {
                     element = document.getElementById("hufflepuff");
-                    element.classList.remove("lightUp")
+                    element.classList.remove("lightUp");
                 }, delay);
                 break;
             case 'r':
@@ -85,15 +79,15 @@ function lightUp() {
                 element.classList.add("lightUp");
                 setTimeout(function () {
                     element = document.getElementById("ravenclaw");
-                    element.classList.remove("lightUp")
+                    element.classList.remove("lightUp");
                 }, delay);
                 break;
             default:
                 break;
         }
-    };
+    }
 
-};
+}
 function playerSelect() {
 
     $('.game-btn').click(function selectHouse() {
@@ -101,7 +95,6 @@ function playerSelect() {
         console.log('before switch');
         switch (house) {
             case 'gryffindor':
-                alert(`playerArray $playerArray, $playerArray(0)`);
                 console.log('pA b push g', playerArray);
                 playerArray.push('g');
                 console.log('pA a push g', playerArray);
@@ -123,12 +116,15 @@ function playerSelect() {
                 break;
             default:
                 break;
-        };
-        console.log('after switch', playerArray)
-
+        }
+        console.log('after switch', playerArray);
+           if (crestArray.length === playerArray.length) {
+            j = playerArray.length - 1;
+            validation();
+        }
     });
 
-};
+}
 
 /*------Validate Players Crest Selection -----------*/
 function validation() {
@@ -143,11 +139,11 @@ function validation() {
         winningCrest = crestArray[j];
         houseMessage();
     }
-};
+}
 
 /*------function to determine which house won-------*/
 function houseMessage() {
-    crestArray[j];
+   /* crestArray[j];*/
     $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').hide();
     $('#message-board').show();
     switch (winningCrest) {
@@ -165,10 +161,10 @@ function houseMessage() {
             break;
         default:
             break;
-    };
+    }
     playerArray.length = 0;
     crestArray.length = 0;
-};
+}
 
 /*---function to let the player know they have won--*/
 function winnerMessage() {
@@ -176,7 +172,7 @@ function winnerMessage() {
     $('#dobby').show();
     $('section>div>div:last>div:first').append(`<p class="win">Dobby thinks you are very clever</p>`);
     playerArray.length = 0;
-};
+}
 
 /*---------reset to begin the game again ----------*/
 $(document).on('click', '.lost', function reStart() {
@@ -192,7 +188,7 @@ location.reload();
 });
 
 /*------play next level of game -------------------*/
-$(document).on('click', '#dobby', function nextLevel() {
+$(document).on('click', '#dobby', function levelUp() {
 
     $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').show();
     $('#dobby').hide();
@@ -203,14 +199,3 @@ $(document).on('click', '#dobby', function nextLevel() {
 
     playGame();
 });
-
-
-
-
-
-
-
-
-
-
-
