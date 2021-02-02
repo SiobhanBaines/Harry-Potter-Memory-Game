@@ -34,15 +34,14 @@ function playGame() {
 
     lightUp();
 
-    for (p=0; p < crestArray.length; p++) {
-        console.log('crestArray.length', crestArray.length);
-        console.log('playerArray.length', playerArray.length);
-        console.log('p', p);
-        playerSelect();
-        console.log('a crestArray.length', crestArray.length);
-        console.log('a playerArray.length', playerArray.length);
-        console.log('a p', p);
+    if (crestArray.length !== playerArray.length)
+    {
+        console.log('cA', crestArray)
+        console.log('pA', playerArray);
     };
+    
+        playerSelect();
+        
             if (crestArray.length === playerArray.length) {
             j = playerArray.length - 1;
             validation();
