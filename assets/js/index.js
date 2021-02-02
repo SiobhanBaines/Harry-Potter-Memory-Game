@@ -57,18 +57,18 @@ function lightUp() {
         switch (crest) {
             case 'g':
                 var element = document.getElementById("gryffindor");
-                    element.classList.add("lightUp");
+                element.classList.add("lightUp");
                 console.log('delay', delay);
-                setTimeout(function () {                
+                setTimeout(function () {
                     element = document.getElementById("gryffindor");
-                element.classList.remove("lightUp")
+                    element.classList.remove("lightUp")
                 }, delay);
                 break;
             case 's':
                 element = document.getElementById("slytherin");
                 element.classList.add("lightUp");
-                console.log('delay', delay);     
-                setTimeout(function () {           
+                console.log('delay', delay);
+                setTimeout(function () {
                     element = document.getElementById("slytherin");
                     element.classList.remove("lightUp")
                 }, delay);
@@ -86,7 +86,7 @@ function lightUp() {
                 element = document.getElementById("ravenclaw");
                 element.classList.add("lightUp");
                 console.log('delay', delay);
-                setTimeout(function () {                
+                setTimeout(function () {
                     element = document.getElementById("ravenclaw");
                     element.classList.remove("lightUp")
                 }, delay);
@@ -101,25 +101,32 @@ function playerSelect() {
 
     $('.game-btn').click(function selectHouse() {
         var house = event.target.id;
-        console.log('before if');
-        if (house === 'gryffindor'){
-            console.log('pA b push g', playerArray);
-            playerArray.push('g');
-            console.log('pA a push g', playerArray);
-        } else if (house === 'slytherin'){
-            console.log('pA b push s', playerArray);
-            playerArray.push('s');
-            console.log('pA a push s', playerArray);
-        } else if (house === 'hufflepuff'){
-            console.log('pA b push h', playerArray);
-            playerArray.push('h');
-            console.log('pA a push h', playerArray);
-        } else if (house === 'ravenclaw'){
-            console.log('pA b push r', playerArray);
-            playerArray.push('r');
-            console.log('pA a push r', playerArray);
+        console.log('before switch');
+        switch (house) {
+            case 'gryffindor':
+                console.log('pA b push g', playerArray);
+                playerArray.push('g');
+                console.log('pA a push g', playerArray);
+                break;
+            case 'slytherin':
+                console.log('pA b push s', playerArray);
+                playerArray.push('s');
+                console.log('pA a push s', playerArray);
+                break;
+            case 'hufflepuff':
+                console.log('pA b push h', playerArray);
+                playerArray.push('h');
+                console.log('pA a push h', playerArray);
+                break;
+            case 'ravenclaw':
+                console.log('pA b push r', playerArray);
+                playerArray.push('r');
+                console.log('pA a push r', playerArray);
+                break;
+            default:
+                break;
         };
-        console.log('after if', playerArray)
+        console.log('after switch', playerArray)
         if (crestArray.length === playerArray.length) {
             j = playerArray.length - 1;
             validation();
@@ -127,101 +134,6 @@ function playerSelect() {
     });
 
 };
-
-     /*   switch (house) {
-            case 'gryffindor':
-                console.log('pA b g', playerArray);
-                console.log('j',j);
-                playerArray.insert(j,'g');
-           /*     playerArray.push('g');
-                console.log('pA a g', playerArray);*/
-          /*      break;
-            case 'slytherin':
-                console.log('pA b s', playerArray);
-                console.log('j',j);
-                playerArray.insert(j,'s')
-            /*    playerArray.push('s');
-                console.log('pA a s', playerArray);*/
-       /*         break;
-            case 'hufflepuff':
-                console.log('pA b h', playerArray);
-                console.log('j',j);
-                playerArray.insert(j,'h')
-             /*   playerArray.push('h');
-                console.log('pA a h', playerArray);*/
-    /*            break;
-            case 'ravenclaw':
-                console.log('pA b r', playerArray);
-                console.log('j',j);
-                playerArray.insert(j,'r')
-             /*   playerArray.push('r');
-                console.log('pA a r', playerArray);*/
-    /*            break;
-            default:
-                break;
-        };*/
-
-
-/* var myFunction = function () {
-     var att = this.getAttribute()
- }
- game_button.addEventListener('click', myFunction(), false);
-
- /*   for (var p =0; p < crestArray.length; p++){*/
-/* console.log('p', p, 'l', l, 'i', i, 'j', j);
- $('#gryffindor').click(function gryffindor() {
-     playerArray.push('g');
-     console.log('pA len', playerArray.length);
-     console.log('cA len', crestArray.length);
-     console.log('playerArray:', playerArray);
-     console.log('crestArray:', crestArray);
-     console.log('p', p, 'l', l, 'i', i, 'j', j);
-     if (crestArray.length === playerArray.length) {
-         j = playerArray.length - 1;
-         validation();
-     };
- });
-
- $('#slytherin').click(function slytherin() {
-     playerArray.push('s');
-     console.log('pA len', playerArray.length);
-     console.log('cA len', crestArray.length);
-     console.log('p', p, 'l', l, 'i', i, 'j', j);
-     console.log('playerArray:', playerArray);
-     console.log('crestArray:', crestArray);
-     if (crestArray.length === playerArray.length) {
-         j = playerArray.length - 1;
-         validation();
-     };
- });
-
- $('#hufflepuff').click(function hufflepuff() {
-     playerArray.push('h');
-     console.log('pA len', playerArray.length);
-     console.log('cA len', crestArray.length);
-     console.log('p', p, 'l', l, 'i', i, 'j', j);
-     console.log('playerArray:', playerArray);
-     console.log('crestArray:', crestArray);
-     if (crestArray.length === playerArray.length) {
-         j = playerArray.length - 1;
-         validation();
-     };
- });
-
- $('#ravenclaw').click(function ravenclaw() {
-     playerArray.push('r');
-     console.log('pA len', playerArray.length);
-     console.log('cA len', crestArray.length);
-     console.log('playerArray:', playerArray);
-     console.log('crestArray:', crestArray);
-     console.log('p', p, 'l', l, 'i', i, 'j', j);
-     if (crestArray.length === playerArray.length) {
-         j = playerArray.length - 1;
-         validation();
-     };
- });
- /*};*/
-/*};*/
 
 /*------Validate Players Crest Selection -----------*/
 function validation() {
@@ -276,14 +188,15 @@ function winnerMessage() {
 };
 
 /*---------reset to begin the game again ----------*/
-$(document).on('click', '.board', function reStart() {
+$(document).on('click', '.lost', function reStart() {
     $('#message-board').hide();
     let message = document.getElementsByTagName('p')[0];
     message.remove();
-    $('#play').show();
+  /*  $('#play').show();*/
+    
     nextLevel = false;
     start = true;
-
+location.reload();
     /* playGame();*/
 });
 
