@@ -30,35 +30,36 @@ function playGame() {
     crestArray.push(crest);
     i = crestArray.length - 1;
 
-    console.log(crest);
     console.log(crestArray);
 
     lightUp();
 
-    console.log('playerArray', playerArray);
-
-    playerSelect();
-
-
-
-
-
+    for (p=0; p < crestArray.length; p++) {
+        console.log('crestArray.length', crestArray.length);
+        console.log('playerArray.length', playerArray.length);
+        console.log('p', p);
+        playerSelect();
+        console.log('a crestArray.length', crestArray.length);
+        console.log('a playerArray.length', playerArray.length);
+        console.log('a p', p);
+    };
+            if (crestArray.length === playerArray.length) {
+            j = playerArray.length - 1;
+            validation();
+        };
 };
 /*------function to light up a house crest----------*/
 function lightUp() {
 
     for (l = 0; l < crestArray.length; l++) {
-        console.log('p', p, 'l', l, 'i', i, 'j', j);
+;
         crest = crestArray[l];
         delay = delay + increment;
-        console.log('delay', delay);
-        console.log('inc', increment);
 
         switch (crest) {
             case 'g':
                 var element = document.getElementById("gryffindor");
                 element.classList.add("lightUp");
-                console.log('delay', delay);
                 setTimeout(function () {
                     element = document.getElementById("gryffindor");
                     element.classList.remove("lightUp")
@@ -67,7 +68,6 @@ function lightUp() {
             case 's':
                 element = document.getElementById("slytherin");
                 element.classList.add("lightUp");
-                console.log('delay', delay);
                 setTimeout(function () {
                     element = document.getElementById("slytherin");
                     element.classList.remove("lightUp")
@@ -76,7 +76,6 @@ function lightUp() {
             case 'h':
                 element = document.getElementById("hufflepuff");
                 element.classList.add("lightUp");
-                console.log('delay', delay);
                 setTimeout(function () {
                     element = document.getElementById("hufflepuff");
                     element.classList.remove("lightUp")
@@ -85,7 +84,6 @@ function lightUp() {
             case 'r':
                 element = document.getElementById("ravenclaw");
                 element.classList.add("lightUp");
-                console.log('delay', delay);
                 setTimeout(function () {
                     element = document.getElementById("ravenclaw");
                     element.classList.remove("lightUp")
@@ -104,6 +102,7 @@ function playerSelect() {
         console.log('before switch');
         switch (house) {
             case 'gryffindor':
+                alert(`playerArray $playerArray, $playerArray(0)`);
                 console.log('pA b push g', playerArray);
                 playerArray.push('g');
                 console.log('pA a push g', playerArray);
@@ -127,21 +126,14 @@ function playerSelect() {
                 break;
         };
         console.log('after switch', playerArray)
-        if (crestArray.length === playerArray.length) {
-            j = playerArray.length - 1;
-            validation();
-        };
+
     });
 
 };
 
 /*------Validate Players Crest Selection -----------*/
 function validation() {
-    console.log('p', p, 'l', l, 'i', i, 'j', j);
-    console.log('playerArray[j]:', playerArray[j]);
-    console.log('crestArray[j]:', crestArray[j]);
-    console.log('playerArray:', playerArray);
-    console.log('crestArray:', crestArray);
+
     var is_same = (crestArray.length == playerArray.length) && crestArray.every(function (element, index) {
         return element === playerArray[index];
     });
@@ -206,7 +198,6 @@ $(document).on('click', '#dobby', function nextLevel() {
     $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').show();
     $('#dobby').hide();
     let message = document.getElementsByTagName('p')[0];
-    console.log(message);
     message.remove();
     nextLevel = true;
     start = false;
