@@ -208,7 +208,7 @@ footer ul{
     padding-top: 0%;
     width:30%;
     height: auto;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     left: 0; right: 0; top: 0; bottom: 0; margin: auto; /* center */
 }
@@ -217,7 +217,7 @@ footer ul{
     width: 100%;
     color: #f5cd11;
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     text-align: center;
     align-items: center;
     left: 0; right: 0; top: 50%; bottom: 0;  /* center */

@@ -38,25 +38,25 @@ function playGame() {
 
     $('#gryffindor').click(function gryffindor() {
         playerArray.push('g');
-        j++;
+        j = playerArray.length - 1;
         validation();
     });
 
     $('#slytherin').click(function slytherin() {
         playerArray.push('s');
-        j++;
+        j = playerArray.length - 1;
         validation();
     });
 
     $('#hufflepuff').click(function hufflepuff() {
         playerArray.push('h');
-        j++;
+        j = playerArray.length - 1;
         validation();
     });
 
     $('#ravenclaw').click(function ravenclaw() {
         playerArray.push('r');
-        j++;
+        j = playerArray.length - 1;
         validation();
     });
 };
@@ -115,12 +115,10 @@ function validation() {
 
     if (is_same) {
         winnerMessage();
-    } else if (playerArray[j] !== crestArray[j]) {
+    } else {
         winningCrest = crestArray[j];
         houseMessage();
-    } /*else if (playerArray.length !== crestArray.length) {
-        break validation;
-    }*/
+    } 
 };
 
 /*------function to determine which house won-------*/
@@ -143,7 +141,8 @@ function houseMessage() {
         default:
             break;
     };
-
+playerArray.length=0;
+crestArray.length=0;
 };
 
 /*---function to let the player know they have won--*/
@@ -151,6 +150,7 @@ function winnerMessage() {
     $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').hide();
     $('#dobby').show();
     $('section>div').append(`<p class="win">Dobby thinks you are very clever</p>`);
+    playerArray.length=0;
 };
 
 /*---------reset to begin the game again ----------*/
@@ -162,7 +162,7 @@ $(document).on('click', '.board', function reStart() {
     nextLevel = false;
     start = true;
 
-    playGame();
+   /* playGame();*/
 });
 
 /*------play next level of game -------------------*/
