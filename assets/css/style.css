@@ -9,6 +9,7 @@
 .lightUp{
     filter:brightness(2);
 }
+
 /*------------------------------------------Global*/
 html, body{
     animation: fadeIn 500ms;
