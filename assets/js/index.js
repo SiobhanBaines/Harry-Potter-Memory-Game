@@ -9,59 +9,45 @@ function playGame() {
 
     for (l = 0; l < crestArray.length; l++) {
         let crest = crestArray[l];
-        let delay = 3000;
-    lightUp(crest);
-    sleep(delay);
-    lightOff(crest);
-    }
 
+        lightUp(crest);
+    }
 }
 /*------function to light up crests stored in crestArray---------*/
 function lightUp(crest) {
-                switch(crest) {
-            case 'g':
-                var element = document.getElementById("gryffindor");
-                element.classList.add("lightUp");
-                break;
-                case 's':
-                element = document.getElementById("slytherin");
-                element.classList.add("lightUp");
-                break;
-                case 'h':
-                element = document.getElementById("hufflepuff");
-                element.classList.add("lightUp");
-                break;
-                case 'r':
-                element = document.getElementById("ravenclaw");
-                element.classList.add("lightUp");
-                break;
-                default:
-                break;
-            }
+    debugger;
+
+    switch (crest) {
+        case 'g':
+            $('#gryffindor').addClass('lightUp');
+            setTimeout(function () {
+                $('#gryffindor').removeClass('lightUp');
+            }, 2000);
+            break;
+        case 's':
+            $('#slytherin').addClass('lightUp');
+            setTimeout(function () {
+                $('#slytherin').removeClass('lightUp');
+            }, 2000);
+            break;
+        case 'h':
+            $('#hufflepuff').addClass('lightUp');
+            setTimeout(function () {
+                $('#hufflepuff').removeClass('lightUp');
+            }, 2000);
+            break;
+        case 'r':
+            $('#ravenclaw').addClass('lightUp');
+            setTimeout(function () {
+                $('#ravenclaw').removeClass('lightUp');
+            }, 2000);
+            break;
+        default:
+            break;
+    }
+    window.setTimeout(function () { }, 1000);
 }
-/*------function to turn light off for crest stored ---------*/
-function lightOff(crest) {
-                switch(crest) {
-            case 'g':
-                var element = document.getElementById("gryffindor");
-                element.classList.remove("lightUp");
-                break;
-                case 's':
-                element = document.getElementById("slytherin");
-                element.classList.remove("lightUp");
-                break;
-                case 'h':
-                element = document.getElementById("hufflepuff");
-                element.classList.remove("lightUp");
-                break;
-                case 'r':
-                element = document.getElementById("ravenclaw");
-                element.classList.remove("lightUp");
-                break;
-                default:
-                break;
-            }
-}
+
 /*------function to compare crestArray with playerArray (game selection with user selection)-----------*/
 function validation() {
 
@@ -79,11 +65,14 @@ function validation() {
 /*----------- sleep function --------- */
 function sleep(delay) {
     var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > delay){
-      break;
+    for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > delay) {
+            var end = new Date().getTime();
+            console.log(start);
+            console.log(end);
+            break;
+        }
     }
-  }
 }
 /*------function to determine which house won-------*/
 function houseMessage() {
@@ -119,6 +108,7 @@ function winnerMessage() {
 $(document).ready(function () {
     /*---------------Begin the Game---------------------*/
     $('#play').click(function start() {
+        /*   debugger;*/
         $("#play").hide();
         if (!nextLevel && start) {
             i = 0;
@@ -203,8 +193,6 @@ let l = 0;
 let p = 0;
 let nextLevel = false;
 let start = true;
-let increment = 300;
-let delay = 0;
 let playerArray = [];
 let crestArray = [];
 let winningCrest = "";

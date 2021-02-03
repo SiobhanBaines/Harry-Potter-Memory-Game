@@ -113,7 +113,10 @@ In Gitpod the bottom area of the screen is where git commands are entered.
 5.	Type “git push” which will push everything to Github
 6.	Open Github and the repository the website is in. To the far right of the menu bar is the Settings tab. Select this and scroll down to “GitHub Pages”
 7.	Under Source if the dropdown menu has “None” select the “master” branch which will bring up the “(root)” folder, and click “Save”
-8.	Your page will now show as published under the GitHub Pages section
+8.	Your page will initially show as ready to be published.
+[image!]deployment
+9.  After a few minutes the message will change and the site will be published.
+[image!]deployed
 
 ### Lessons learned
 
