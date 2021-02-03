@@ -105,6 +105,7 @@ function winnerMessage() {
     $('section>div>div:last>div:first').append(`<p class="win">Dobby thinks you are very clever</p>`);
     playerArray.length = 0;
 }
+
 $(document).ready(function () {
     /*---------------Begin the Game---------------------*/
     $('#play').click(function start() {
@@ -171,19 +172,29 @@ $(document).ready(function () {
         }
     });
     $('.hogwarts-crest').hover(function () {
-        $('.hogwarts-crest').css('filter', 'brightness(1)');
+        $(this).css('filter', 'brightness(2)');
+    }, function(){
+        $(this).css('filter', 'brightness(1)');
     });
     $('.gryffindor').hover(function () {
-        $('.gryffindor').css('filter', 'brightness(1)');
+        $(this).css('filter', 'brightness(2)');
+    }, function(){
+        $(this).css('filter', 'brightness(1)');
     });
     $('.slytherin').hover(function () {
-        $('.slytherin').css('filter', 'brightness(1)');
+        $(this).css('filter', 'brightness(2)');
+    }, function(){
+        $(this).css('filter', 'brightness(1)');
     });
-    $('.hufflpuff').hover(function () {
-        $('.hufflpuff').css('filter', 'brightness(1)');
+    $('.hufflepuff').hover(function () {
+        $(this).css('filter', 'brightness(2)');
+    }, function(){
+        $(this).css('filter', 'brightness(1)');
     });
     $('.ravenclaw').hover(function () {
-        $('.ravenclaw').css('filter', 'brightness(1)');
+        $(this).css('filter', 'brightness(2)');
+    }, function(){
+        $(this).css('filter', 'brightness(1)');
     });
 })
 /*---------------Global variables-------------*/
