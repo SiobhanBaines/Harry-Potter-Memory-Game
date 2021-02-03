@@ -133,11 +133,7 @@ footer ul{
 .game{
     padding: 0% 30% 0% 30%;
 }
-/*.button:hover{
-    border-radius: 50px;
-	background: #fcad26;
-    color: #fff;
-}*/
+
 #gryffindor,
 #hufflepuff{
     margin-left: 0%;
@@ -177,7 +173,7 @@ footer ul{
     border: none;
     outline:none;
     height: 60%;
-    width: 100%;
+    width: 120%;
     z-index: 1;
     position: relative;
     filter:brightness(1);

@@ -29,6 +29,10 @@ I then changed the order round of the col classes and adjusted the media queries
 When testing the game I found that everything appeared to work for the first round of the game where only 1 crest needed to be selected. I had a function which contained a switch clause. I tried using a for loop to only load the id for the crest that had been selected. Instead, in the second round, it loaded the id for the first click twice before I had clicked on the second crest which I found out by using multiple console logs.
 [image] switch
 The fix was to call the function using jquery in the same way as I had for Dobby and Messageboard. [$(document).on('click', '.game-btn', function selectHouse() {] instead of [$('.game-btn').click(function selectHouse() {]
+### The crests can all be lit at the same time
+When the game lights up the crests, it should switch on and then switch off the crest light up after a pause before lighting up the next crest.
+Using [setTimeout(() =>{$('.game-btn').removeClass("lightUp");},delay);] or [setInterval(() =>{$('.game-btn').removeClass("lightUp");},delay);] work in that they cause the crest to be lit up for a period of time so the player can see it light up but then they stay lit when the next one lights up so that more than one crest is lit at the same time.
+Using google I found [a sleep function](https://www.sitepoint.com/delay-sleep-pause-wait/)
 
 ## User Story One Testing
 
