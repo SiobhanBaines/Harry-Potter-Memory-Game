@@ -25,6 +25,11 @@ I then added some media query statements which made the crests appear correctly 
 [image] col-md
 I then changed the order round of the col classes and adjusted the media queries which appears to have created the image I desire. All four crests together in the centre.
 [image] col-swap
+### Issue with switch clause for user selection
+When testing the game I found that everything appeared to work for the first round of the game where only 1 crest needed to be selected. I had a function which contained a switch clause. I tried using a for loop to only load the id for the crest that had been selected. Instead, in the second round, it loaded the id for the first click twice before I had clicked on the second crest which I found out by using multiple console logs.
+[image] switch
+The fix was to call the function using jquery in the same way as I had for Dobby and Messageboard. [$(document).on('click', '.game-btn', function selectHouse() {] instead of [$('.game-btn').click(function selectHouse() {]
+
 ## User Story One Testing
 
 ## User Story Two Testing

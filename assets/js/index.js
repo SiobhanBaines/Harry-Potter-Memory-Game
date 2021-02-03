@@ -135,33 +135,24 @@ $(document).on('click', '#dobby', function levelUp() {
 });
 /*------function to load playerArray with user selected crest---------*/
 $(document).on('click', '.game-btn', function selectHouse() {
-    console.log(this);
-    console.log('before switch');
+
     let house = this.id;
     switch (house) {
         case 'gryffindor':
-            console.log('pA b push g', playerArray);
             playerArray.push('g');
-            document.getElementById('gryffindor').value = "";
-            console.log('pA a push g', playerArray);
+          /*  document.getElementById('gryffindor').value = "";*/
             break;
         case 'slytherin':
-            console.log('pA b push s', playerArray);
             playerArray.push('s');
-            document.getElementById('slytherin').value = "";
-            console.log('pA a push s', playerArray);
+        /*    document.getElementById('slytherin').value = "";*/
             break;
         case 'hufflepuff':
-            console.log('pA b push h', playerArray);
             playerArray.push('h');
-            document.getElementById('hufflepuff').value = "";
-            console.log('pA a push h', playerArray);
+       /*     document.getElementById('hufflepuff').value = "";*/
             break;
         case 'ravenclaw':
-            console.log('pA b push r', playerArray);
             playerArray.push('r');
-            document.getElementById('ravenclaw').value = "";
-            console.log('pA a push r', playerArray);
+        /*    document.getElementById('ravenclaw').value = ""; */
             break;
         default:
             break;
