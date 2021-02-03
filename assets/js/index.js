@@ -13,33 +13,38 @@ function playGame() {
         lightUp(crest);
     }
 }
-/*------function to light up crests stored in crestArray---------*/
+    /*------function to light up crests stored in crestArray---------*/
 function lightUp(crest) {
     debugger;
-
+var element = document.getElementsByClassName('game-btn');
+console.log(element);
     switch (crest) {
         case 'g':
-            $('#gryffindor').addClass('lightUp');
+            var el = document.getElementById('#gryffindor');
+            document.getElementById('#gryffindor').style.filter = 'brightness(200%)';
             setTimeout(function () {
-                $('#gryffindor').removeClass('lightUp');
+                document.getElementById('#gryffindor').style.filter = 'brightness(100%)';
             }, 2000);
             break;
         case 's':
-            $('#slytherin').addClass('lightUp');
+            var el = document.getElementById('#slytherin');
+            document.getElementById('#slytherin').style.filter = 'brightness(200%)';
             setTimeout(function () {
-                $('#slytherin').removeClass('lightUp');
+                document.getElementById('#slytherin').style.filter = 'brightness(100%)';
             }, 2000);
             break;
         case 'h':
-            $('#hufflepuff').addClass('lightUp');
+            var el = document.getElementById('#hufflepuff');
+            document.getElementById('#hufflepuff').style.filter = 'brightness(200%)';
             setTimeout(function () {
-                $('#hufflepuff').removeClass('lightUp');
+                document.getElementById('#hufflepuff').style.filter = 'brightness(100%)';
             }, 2000);
             break;
         case 'r':
-            $('#ravenclaw').addClass('lightUp');
+            var el = document.getElementById('#ravenclaw');
+            document.getElementById('#ravenclaw').style.filter = 'brightness(200%)';
             setTimeout(function () {
-                $('#ravenclaw').removeClass('lightUp');
+                document.getElementById('#ravenclaw').style.filter = 'brightness(100%)';
             }, 2000);
             break;
         default:
@@ -107,6 +112,7 @@ function winnerMessage() {
 }
 
 $(document).ready(function () {
+
     /*---------------Begin the Game---------------------*/
     $('#play').click(function start() {
         /*   debugger;*/
