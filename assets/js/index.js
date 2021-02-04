@@ -13,44 +13,28 @@ function playGame() {
         lightUp(crest);
     }
 }
-    /*------function to light up crests stored in crestArray---------*/
+/*------function to light up crests stored in crestArray---------*/
 function lightUp(crest) {
-    debugger;
-var element = document.getElementsByClassName('game-btn');
-console.log(element);
-    switch (crest) {
-        case 'g':
-            var el = document.getElementById('#gryffindor');
-            document.getElementById('#gryffindor').style.filter = 'brightness(200%)';
+   /* debugger;*/
+    let element = document.getElementsByClassName('game-btn');
+    let el1 = Array.prototype.slice.call(element);
+
+   /* console.log(element);
+    console.log(el1);*/
+    for (i = 0; i < 4; i++) {
+        let className = (el1[i].classList[2]);
+        let classId = ('#' + el1[i].id)
+        let classCode = (el1[i].classList[2]).slice(0, 1);
+        if (classCode === crest) {
+
+   /*         document.getElementById(classId).style.filter = 'brightness(200%)';
             setTimeout(function () {
-                document.getElementById('#gryffindor').style.filter = 'brightness(100%)';
-            }, 2000);
-            break;
-        case 's':
-            var el = document.getElementById('#slytherin');
-            document.getElementById('#slytherin').style.filter = 'brightness(200%)';
-            setTimeout(function () {
-                document.getElementById('#slytherin').style.filter = 'brightness(100%)';
-            }, 2000);
-            break;
-        case 'h':
-            var el = document.getElementById('#hufflepuff');
-            document.getElementById('#hufflepuff').style.filter = 'brightness(200%)';
-            setTimeout(function () {
-                document.getElementById('#hufflepuff').style.filter = 'brightness(100%)';
-            }, 2000);
-            break;
-        case 'r':
-            var el = document.getElementById('#ravenclaw');
-            document.getElementById('#ravenclaw').style.filter = 'brightness(200%)';
-            setTimeout(function () {
-                document.getElementById('#ravenclaw').style.filter = 'brightness(100%)';
-            }, 2000);
-            break;
-        default:
-            break;
+                document.getElementsByClass(classId).style.filter = 'brightness(100%)';
+            }, 2000);*/
+        }
     }
-    window.setTimeout(function () { }, 1000);
+
+    /* window.setTimeout(function () { }, 1000);*/
 }
 
 /*------function to compare crestArray with playerArray (game selection with user selection)-----------*/
@@ -179,30 +163,31 @@ $(document).ready(function () {
     });
     $('.hogwarts-crest').hover(function () {
         $(this).css('filter', 'brightness(2)');
-    }, function(){
+    }, function () {
         $(this).css('filter', 'brightness(1)');
     });
     $('.gryffindor').hover(function () {
         $(this).css('filter', 'brightness(2)');
-    }, function(){
+    }, function () {
         $(this).css('filter', 'brightness(1)');
     });
     $('.slytherin').hover(function () {
         $(this).css('filter', 'brightness(2)');
-    }, function(){
+    }, function () {
         $(this).css('filter', 'brightness(1)');
     });
     $('.hufflepuff').hover(function () {
         $(this).css('filter', 'brightness(2)');
-    }, function(){
+    }, function () {
         $(this).css('filter', 'brightness(1)');
     });
     $('.ravenclaw').hover(function () {
         $(this).css('filter', 'brightness(2)');
-    }, function(){
+    }, function () {
         $(this).css('filter', 'brightness(1)');
     });
 })
+
 /*---------------Global variables-------------*/
 let i = 0;
 let j = 0;
