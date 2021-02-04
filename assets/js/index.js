@@ -15,7 +15,7 @@ function playGame() {
 }
 /*------function to light up crests stored in crestArray---------*/
 function lightUp(crest) {
-   /* debugger;*/
+    /*debugger;*/
     let element = document.getElementsByClassName('game-btn');
     let el1 = Array.prototype.slice.call(element);
 
@@ -26,11 +26,24 @@ function lightUp(crest) {
         let classId = ('#' + el1[i].id)
         let classCode = (el1[i].classList[2]).slice(0, 1);
         if (classCode === crest) {
-
-   /*         document.getElementById(classId).style.filter = 'brightness(200%)';
+              $(classId).css('filter','brightness(200%)').css('display','block');
+            
             setTimeout(function () {
-                document.getElementsByClass(classId).style.filter = 'brightness(100%)';
-            }, 2000);*/
+               $(classId).css('filter','brightness(100%');
+            }, 2000);
+          /*  $(classId).addClass('lightUp').delay(2000).removeClass('lightUp');
+           /* $(classId).css('filter','brightness(200%');*/
+          /*  console.log('on');
+            window.setTimeout(function () { }, 5000);
+            /*let delayReset = await delay(2000);*/
+            /*setTimeout(function () {*/
+          /*      $(classId).removeClass('lightUp');
+             /*   $(classId).css('filter','brightness(100%');*/
+             /*   console.log('off');
+                window.setTimeout(function () { }, 5000);
+            /*}, 2000);
+            setTimeout(function(){},2000);*/
+         /*   let delayReset = await delay(2000);*/
         }
     }
 
