@@ -25,16 +25,29 @@ I want a game that uses different coloured lights to create a 'copy me' routine.
 * Ravenclaw are known for their intelligence, knowledge, forward planning and humour.
 Since I am using Harry Potter as the theme I feel it is only right to talk a little about the author of Harry Potter in the about section.
 
-
-
 ### *Strategy*
-The objective of this website is to create an interactive and fun game for a user. The user must want to interact with the website and the website must inturn react to the interaction of the user. I want the site to look enticing to an individual and to give the individual feedback on how they are doing in the game.
+The objective of this project is to an interactive and fun game for a player. A player must want to interact with the website and the website must inturn react to the interaction of the player. When the player first enters the website I want it to look exciting and make them want to 'have a go'. When the player is playing the game I want the game to give the player feedback. Everything in the site must be relevant to Harry Potter.
 
 ### *Scope*
-The concept of the game is based on the 'Simon' game of the 1980's in the style of Harry Potter. The website needs to be easy to use, information must be readily accessible including the instructions of how to play the game. When the website responseds to the players action it needs to be clear and fun. The initial landing page will have the Hogwarts crest and a 'Welcome to Hogwarts' banner. Clicking on the crest will take the player into the game itself which will then invite the player to start the game. One of the Hogwarts house crests will give the illusion of lighting up and the player will need to click on the same Hogwarts house to move upto the next level. The website will add to the pattern by lighting the inital house and a randomly selected second house. Each time the player fails to follow the pattern correctly 50 points will be awarded to the final house in the pattern and a message will appear on the screen which is relevant to that house. 
+The concept of the game is based on the 'Simon' game of the 1980's in the style of Harry Potter. 
+#### *In Scope*
+Clicking on the crest on the landing page will take the player to the game.
+There will be a play-button infront of the 4 house crests to enable the player to start the game.
+The game will randomly select which house to light up.
+Each house must be able to light up if the game selects it.
+On subsequent levels the game must add a new randomly selected house to the list of houses to light up and each house must light up separately in sequence.
+If the player successfully replicates the pattern, a message needs to appear letting them know and allowing them to click on the screen to return to the game at the next level. 
+If the player is unsuccessful, a message relating to the house that was the last to be selected by the game must appear and when the player clicks on the message the game must return to the start of the game.
+There needs to be a menu containing an instructions page and a page about both Harry Potter and J K Rawling to give background to the game. 
+#### *Out of Scope*
+It would be nice for the game to have a leader board and the ability to create a user account so that the player could compete against friends.
+
 ![image]()
 ### *Structure*
-The crests will be grouped together in sqaure in the centre. There will be a scoreboard at the top of the screen showing each house. I will add a dropdown menu so the player can find out the rules of the game and some details about the author of Harry Potter and the four houses in Hogwarts
+The school crest will appear in the centre of the screen
+The house crests will be grouped together in sqaure in the centre.
+The win and lose messages will appear in the centre of the screen.
+A dropdown menu will allow the player access to instructions of how to play the game and some details about the story of Harry Potter and the author, J K Rawling.
 
 ![image]()
 
@@ -52,10 +65,15 @@ The crests will be grouped together in sqaure in the centre. There will be a sco
 [Mobile]
 
 ### *Surface*
-I am using 5 crests in the website [Hogwarts crest](), [Gryffindor crest](), [Slytherin crest](), [Hufflepuff crest]() and [Ravenclaw crest]().The four house crests give me the colors red, green, yellow and blue for the illumination affect. I chose purple as the background to make the site seem more magical and exciting. I have used a bright yellow for the headings in keeping with the gold of Hogwarts. To give the site a more official feel I found the'Parry Hotter' font which is very similar to the real Harry Potter font.
+The images I am using on the wesite include the school crest, the four house crests, Dobby and some parchment.(see below under Media)
+The four house crests will act as the four buttons and give the colors red, green, yellow and blue which will have the ability to illuminate.
+The background will be a dark regal/magical purple.
+The headings will be in a bright yellow to represent gold.
+The win message will appear below Dobby in yellow with a red boarder.
+The lose messages will appear on the parchement in black.
+The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. (credit!!!)
+The font on the How to play and About pages will be white so it stands out from the page making it easy to read,
 [index_image](), 
-[colour pallet]()
-
 
 ## Features
 ### Existing Features
@@ -64,7 +82,7 @@ When the home page loads it's position and opacity changes bringing the webpage 
 #### feature 2
 I wanted the transition from the home page to the game page to be softer to appear smoother for the player.
 #### feature 3
-When the play fails to follow the pattern created by the crests lighting up a message relating to the last crest in the pattern pops up on a wooden board in yellow with a white boarder.
+When the player fails to follow the pattern created by the crests lighting up a message relating to the last crest in the pattern pops up on a wooden board in yellow with a white boarder.
 
 ## Technologies Used
 CSS3, HMTL5, Javscript, JQuery, Bootstrap Framework, Google, Fontawesome
@@ -79,9 +97,7 @@ J K Rowling originally created the very successful Harry Potter series of books 
 ### feature 1
 I found out how to create the Home page movement and opacity from this YouTube video by [dcode](https://www.youtube.com/watch?v=zWB219zf1og)
 ### feature 3
-My mentor Kyeza Arnold suggested a woodne background for the pop-up message. I found this more difficult to read and wanted a border around the font to make it stand out more. I added a black boarder and a red shadow. [css-font-border](https://stackoverflow.com/questions/2570972/css-font-border)
-
-
+My mentor Kyeza Arnold suggested a wooden background for the pop-up message. I found this more difficult to read and wanted a border around the font to make it stand out more. I added a black boarder and a red shadow. [css-font-border](https://stackoverflow.com/questions/2570972/css-font-border). I later changed the background to parchment which was suggested by my daughter.
 
 When using Google to find out more information about various parts of my code that were not working as I expected I often used[w3schools](https://www.w3schools.com/default.asp), [stackoverflow](https://stackoverflow.com/questions/tagged/html) and [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/).
 
@@ -97,7 +113,7 @@ Below are the links for each piece of clipart:
 [Hufflepuff Crest](https://www.pinclipart.com/pindetail/iTiJwxo_crest-banner-png-harry-potter-hufflepuff-crest-clipart/)
 [Message Background](https://pxhere.com/en/photo/1370487)
 [parchment](https://www.pinclipart.com/pindetail/mTmTw_old-paper-cliparts-old-burnt-paper-background-png/)
-
+[Dobby]()
 
 I then used [icolorpalette](https://icolorpalette.com/) to get a colour palette from the image I used for index-image.
 
