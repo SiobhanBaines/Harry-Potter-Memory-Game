@@ -5,47 +5,105 @@ function playGame() {
     crestArray.push(crest);
     i = crestArray.length - 1;
 
-    /*debugger;*/
-    function lightOn(number) {
 
-        setTimeout(function () {
-            alert('x = '+ x);
-            if (x < crestArray.length) {
-                let crest = crestArray[x];
-                alert('crestArray[x] = '+ crestArray[x]);
-                let crestId = '#' + crest;
-                x++;
-                $(crestId).addClass('lightUp');
-                lightOn(x);
-               /* $(crestId).css('filter', 'brightness(2)').css('display', 'block');*/
-               
-            }
-        }, 100);
+    var timer = setInterval(lightOn, 1000);
+    /* var offTimer = setInterval(lightOff, 2000);*/
+   /* $('.game-btn').removeClass('lightUp');*/
+    function lightOn() {
+        if (x < crestArray.length) {
+            $('.game-btn').removeClass('lightUp');
+            $('.game-btn').css('filter','');
+            let crest = crestArray[x];
+            let crestId = '#' + crest;
+            $(crestId).addClass('lightUp');
+            x++;
+        } else {
+            $('.game-btn').removeClass('lightUp')
+           $('.game-btn').css('filter','');
+            clearInterval(timer);
+        }
+        /* $(crestId).removeClass('lightUp')*/
     }
-      lightOn(x);
-            /*------function to dim crests stored in crestArray---------*/
-    function lightOff(number) {
-        setTimeout(function () {
-            alert('y = '+y);
-            y++;
-            if (y < crestArray.length) {
-                let crest = crestArray[y];
-                alert('crestArray[y] = '+crestArray[y]);
-                let crestId = '#' + crest;
-                $(crestId).removeClass('lightUp');
-                lightOff(y);
-                /*$(crestId).css('filter', 'brightness(0)');*/
-                
-            }
-        }, 1000);
-    }
-     lightOff(y);
-    
+    /*  do {*/
+    /*  lightOn(x);
+      /*   lightOff();*/
+    /*  x++;
+  } while (x < crestArray.length);*/
 
 }
+
+/*function lightOn() {
+    if (x < crestArray.length) {
+        let crest = crestArray[x];
+        let crestId = '#' + crest;
+        $(crestId).addClass('lightUp');
+        x++;
+    } else {
+        clearInterval(timer);
+    }
+    $(crestId).removeClass('lightUp')
+}
+
+/*function lightOff(number) {
+    if (x < crestArray.length) {
+        let crest = crestArray[x];
+        let crestId = '#' + crest;
+        var onTimer = setInterval(function () {
+            $(crestId).removeClass('lightUp');
+        }, 1000);
+        x++;
+    }
+}
+
+/*function lightOff() {
+           let crest = crestArray[x];
+        let crestId = '#' + crest;
+    var onTimer = setInterval(function(){
+        $(crestId).removeClass('lightUp');
+    }, 5000);
+}*/
+//debugger;
+/*  function lightOn(number) {
+ 
+      setTimeout(function () {
+         /* alert('x = '+ x);*/
+/*       if (x < crestArray.length) {
+           let crest = crestArray[x];
+         /*  alert('crestArray[x] = '+ crestArray[x]);*/
+/*          let crestId = '#' + crest;
+          x++;
+         /* $(crestId).addClass('lightUp');*/
+
+/*          $(crestId).css('filter', 'brightness(5)').css('display', 'block');
+          lightOn(x);
+       }
+   }, 2000);
+}
+ 
+ 
+/*   lightOn(x);
+       /*------function to dim crests stored in crestArray---------*/
+/* function lightOff(number) {
+     setTimeout(function () {*/
+/*  alert('y = '+y);*/
+/*        
+        if (y < crestArray.length) {
+            let crest = crestArray[y];*/
+/*    alert('crestArray[y] = '+crestArray[y]);*/
+/*         let crestId = '#' + crest;
+         y++;*/
+/*$(crestId).removeClass('lightUp');*/
+
+/*         $(crestId).css('filter', 'brightness(1)');
+         lightOff(y);
+     }
+ }, 2000);
+}
+lightOff(y);
+ 
+ 
+}
 /*------function to light up crests stored in crestArray---------*/
-
-
 
 /*------function to compare crestArray with playerArray (game selection with user selection)-----------*/
 function validation() {
@@ -67,17 +125,17 @@ function houseMessage() {
     $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').hide();
     $('#message-board').show();
     switch (winningCrest) {
-        case 'g':
-            $('section>div>div:last>div:first').append(`<p class="lost">Gryffindor's bravery is bountious</p>`);
+        case 'gryffindor':
+            $('section>div>div:last>div').append(`<p class="lost">Gryffindor's bravery is bountious</p>`);
             break;
-        case 's':
-            $('section>div>div:last>div:first').append(`<p class="lost">Slytherin's cunning conquers all</p>`);
+        case 'slytherin':
+            $('section>div>div:last>div').append(`<p class="lost">Slytherin's cunning conquers all</p>`);
             break;
-        case 'h':
-            $('section>div>div:last>div:first').append(`<p class="lost">Hufflepuff's patience prevails</p>`);
+        case 'hufflepuff':
+            $('section>div>div:last>div').append(`<p class="lost">Hufflepuff's patience prevails</p>`);
             break;
-        case 'r':
-            $('section>div>div:last>div:first').append(`<p class="lost">Ravenclaw's wisdom wins</p>`);
+        case 'ravenclaw':
+            $('section>div>div:last>div').append(`<p class="lost">Ravenclaw's wisdom wins</p>`);
             break;
         default:
             break;
@@ -168,6 +226,7 @@ $(document).ready(function () {
 /*---------------Global variables-------------*/
 let i = 0;
 let j = 0;
+
 var x = 0;
 var y = 0;
 let nextLevel = false;
