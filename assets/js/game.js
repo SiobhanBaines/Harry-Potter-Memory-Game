@@ -15,11 +15,14 @@ function playGame() {
                 alert('crestArray[x] = '+ crestArray[x]);
                 let crestId = '#' + crest;
                 x++;
+                $(crestId).addClass('lightUp');
                 lightOn(x);
                /* $(crestId).css('filter', 'brightness(2)').css('display', 'block');*/
-               $(crestId).addClass('lightUp');
+               
             }
         }, 100);
+    }
+      lightOn(x);
             /*------function to dim crests stored in crestArray---------*/
     function lightOff(number) {
         setTimeout(function () {
@@ -29,16 +32,15 @@ function playGame() {
                 let crest = crestArray[y];
                 alert('crestArray[y] = '+crestArray[y]);
                 let crestId = '#' + crest;
+                $(crestId).removeClass('lightUp');
                 lightOff(y);
                 /*$(crestId).css('filter', 'brightness(0)');*/
-                $(crestId).removeClass('lightUp');
+                
             }
         }, 1000);
     }
      lightOff(y);
-    }
-      lightOn(x);
-
+    
 
 }
 /*------function to light up crests stored in crestArray---------*/
@@ -166,8 +168,6 @@ $(document).ready(function () {
 /*---------------Global variables-------------*/
 let i = 0;
 let j = 0;
-let l = 0;
-let p = 0;
 var x = 0;
 var y = 0;
 let nextLevel = false;
