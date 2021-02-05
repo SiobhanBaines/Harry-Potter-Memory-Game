@@ -161,7 +161,7 @@ $(document).ready(function () {
     }, function () {
         $(this).css('filter', 'brightness(1)');
     });
-})
+});
 
 /*---------------Global variables-------------*/
 let i = 0;
