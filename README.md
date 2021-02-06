@@ -51,9 +51,9 @@ A dropdown menu will allow the player access to instructions of how to play the 
 ### *Skeleton*
 #### Wireframes
 ###### Initial Design
-[Desktop]
-[Tablet]
-[Mobile]
+[Desktop](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/wireframes/MS2-HP-Game_Desktop.pdf)
+[Tablet](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/wireframes/MS2-HP-Game_Tablet.pdf)
+[Mobile](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/wireframes/MS2-HP-Game_Mobile.pdf)
 
 ###### Design modifications
 Since the orignal design there have been some changes.
@@ -71,15 +71,15 @@ The background will be a dark regal/magical purple.
 The headings will be in a bright yellow to represent gold.
 The win message will appear below Dobby in yellow with a red boarder.
 The lose messages will appear on the parchement in black.
-The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. (credit!!!)
+The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. [font by Anke Arnold](www.anke-art.de)
 The font on the How to play and About pages will be white so it stands out from the page making it easy to read,
-![Hogwarts Crest]()
-![Gryffindor Crest]()
-![Slytherin Crest]()
-![Ravenclaw Crest]()
-![Hufflepuff Crest]()
-![Parchment]()
-![Dobby]()
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/hogwarts_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/gryffindor_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/slytherin_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/ravenclaw_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/hufflepuff_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/paper.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/dobby.png)
 
 ## Features
 ### Existing Features
@@ -99,10 +99,11 @@ The game could be expanded to become a multi-player game with the incorporation 
 CSS3, HMTL5, Javscript, JQuery, Bootstrap Framework, Google, Fontawesome
 
 ##### Font style
-Parry Hotter and Ubuntu.
+Parry Hotter [font by Anke Arnold](www.anke-art.de) and Ubuntu.
 
 ## Credits
-J K Rowling originally created the very successful Harry Potter series of books which is the core theme of this game.
+[J K Rowling](https://www.jkrowling.com/) originally created the very successful [Harry Potter](https://www.wizardingworld.com/collections/starting-harry-potter) series of books which is the core theme of this game.
+
 ### feature 1
 I found out how to create the Home page movement and opacity from this YouTube video by [dcode](https://www.youtube.com/watch?v=zWB219zf1og)
 ### feature 3
@@ -124,7 +125,7 @@ Below are the links for each piece of clipart:
 [Dobby](https://www.pinclipart.com/maxpin/iihmho/)
 
 I then used [icolorpalette](https://icolorpalette.com/) to get a colour palette from the Hogwarts School Crest. This did not give me the background colour.
-
+[colour pallet](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/ms2_hp_colour_pallet.pdf)
 # Deployment
 In Gitpod the bottom area of the screen is where git commands are entered.
 
@@ -136,6 +137,6 @@ In Gitpod the bottom area of the screen is where git commands are entered.
 6.	Open Github and the repository the website is in. To the far right of the menu bar is the Settings tab. Select this and scroll down to “GitHub Pages”
 7.	Under Source if the dropdown menu has “None” select the “master” branch which will bring up the “(root)” folder, and click “Save”
 8.	Your page will initially show as ready to be published.
-[image!]deployment
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/deployment.png)
 9.  After a few minutes the message will change and the site will be published.
-[image!]deployed
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/deployed.png)

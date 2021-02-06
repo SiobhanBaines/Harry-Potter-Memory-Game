@@ -43,11 +43,64 @@ The memory test is covered by the patterns created that the player needs to repl
 The menu gives easy access to the instructions on the 'How to play' page. - ask Ciara and Fiona to check the instructions are correct and make sense
 The menu gives easy access to some information about the theme, 'Harry Potter'.
 
-## User Story Two Testing
+## Unit Testing
 ### Menu
 I have made the menu appear differently on the home page to all the other pages because I think there is no need to have a home page menu option when you first get to the website.
-![home page menu]()
-![menu]()
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/home-page-menu.png)
+![image]https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/menu.png()
+All menu options tested to ensure they all take the user to where they expect to go.
+
+### Game
+When the game loads there is a play button ![image](play button) which the play clicks to start the game. Once the game starts it selects one of the four houses to light up the crest. Either Gryffindor, Slytherin, Hufflepuff or Ravenclaw. 
+![image](game screen with lit up house)
+If the player clicks on the same house crest Dobby appears telling the player how clever they are.
+![image](dobby screen)
+If the player clicks on the wrong house crest Dobby appears giving the player a message from the house which is the last house in the pattern.
+![image](lost message gryffindor)
+![image](lost message slytherin)
+![image](lost message hufflepuff)
+![image](lost message ravenclaw)
 
 ## Performance Testing using Lighthouse
-
+### Desktop
+#### Home Page
+##### before
+![image][index-desk-1]()
+##### after
+![image][index-desk-2]()
+#### Game Page
+##### before
+![image][game-desk-1]()
+##### after
+![image][game-desk-2]()
+#### Help Page  
+##### before
+![image][help-desk-1]()
+##### after
+![image][help-desk-2]()
+#### About Page
+##### before
+![image][about-desk-1]()
+##### after
+![image][about-desk-2]()
+### Mobile
+#### Home Page
+##### before
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/lighthouse/index-mobile-1.png)
+##### after
+![image][index-mobile-2]()
+#### Game Page
+##### before
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/lighthouse/game-mobile-1.png)
+##### after
+![image][game-mobile-2]()
+#### Help Page  
+##### before
+![image][help-mobile-1]()
+##### after
+![image][help-mobile-2]()
+#### About Page
+##### before
+![image][about-mobile-1]()
+##### after
+![image][about-mobile-2]()
