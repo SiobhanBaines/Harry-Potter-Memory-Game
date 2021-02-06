@@ -44,7 +44,9 @@ The menu gives easy access to the instructions on the 'How to play' page. - ask 
 The menu gives easy access to some information about the theme, 'Harry Potter'.
 
 ## User Story Two Testing
-
+### Menu
+I have made the menu appear differently on the home page to all the other pages because I think there is no need to have a home page menu option when you first get to the website.
+![]
 
 ## Performance Testing using Lighthouse
 
