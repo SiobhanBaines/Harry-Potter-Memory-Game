@@ -44,6 +44,8 @@ The menu gives easy access to the instructions on the 'How to play' page. - ask 
 The menu gives easy access to some information about the theme, 'Harry Potter'.
 
 ## Unit Testing
+### How to Unit Test
+
 ### Menu
 I have made the menu appear differently on the home page to all the other pages because I think there is no need to have a home page menu option when you first get to the website.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/home-page-menu.png)
@@ -51,6 +53,8 @@ I have made the menu appear differently on the home page to all the other pages 
 All menu options tested to ensure they all take the user to where they expect to go.
 
 ### Game
+The player needs to click on the Hogwarts school crest.
+![image][Hogwarts]
 When the game loads there is a play button ![image](play button) which the play clicks to start the game. Once the game starts it selects one of the four houses to light up the crest. Either Gryffindor, Slytherin, Hufflepuff or Ravenclaw. 
 ![image](game screen with lit up house)
 If the player clicks on the same house crest Dobby appears telling the player how clever they are.
@@ -65,9 +69,7 @@ If the player clicks on the wrong house crest Dobby appears giving the player a 
 ### Desktop
 #### Home Page
 ##### before
-![image][index-desk-1]()
-##### after
-![image][index-desk-2]()
+![image][index-desk]()
 #### Game Page
 ##### before
 ![image][game-desk-1]()
@@ -95,10 +97,9 @@ If the player clicks on the wrong house crest Dobby appears giving the player a 
 ##### after
 ![image][game-mobile-2]()
 #### Help Page  
-##### before
-![image][help-mobile-1]()
-##### after
-![image][help-mobile-2]()
+![image][help-mobile]()
+
+
 #### About Page
 ##### before
 ![image][about-mobile-1]()
