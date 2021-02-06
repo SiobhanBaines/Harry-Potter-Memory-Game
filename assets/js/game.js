@@ -5,104 +5,35 @@ function playGame() {
     crestArray.push(crest);
     i = crestArray.length - 1;
 
-
     var timer = setInterval(lightOn, 1000);
-    /* var offTimer = setInterval(lightOff, 2000);*/
-   /* $('.game-btn').removeClass('lightUp');*/
+    var sameTimer = setInterval(lightOff, 0);
     function lightOn() {
         if (x < crestArray.length) {
+            if ((crestArray.length > 1) &&
+                (crestArray[x] === crestArray[x + 1])) {
+                sameTimer = setInterval(lightOff, 500);
+            }
             $('.game-btn').removeClass('lightUp');
-            $('.game-btn').css('filter','');
+            $('.game-btn').css('filter', '');
             let crest = crestArray[x];
             let crestId = '#' + crest;
             $(crestId).addClass('lightUp');
             x++;
         } else {
             $('.game-btn').removeClass('lightUp')
-           $('.game-btn').css('filter','');
+            $('.game-btn').css('filter', '');
             clearInterval(timer);
         }
-        /* $(crestId).removeClass('lightUp')*/
     }
-    /*  do {*/
-    /*  lightOn(x);
-      /*   lightOff();*/
-    /*  x++;
-  } while (x < crestArray.length);*/
 
-}
-
-/*function lightOn() {
-    if (x < crestArray.length) {
-        let crest = crestArray[x];
-        let crestId = '#' + crest;
-        $(crestId).addClass('lightUp');
-        x++;
-    } else {
-        clearInterval(timer);
-    }
-    $(crestId).removeClass('lightUp')
-}
-
-/*function lightOff(number) {
-    if (x < crestArray.length) {
-        let crest = crestArray[x];
-        let crestId = '#' + crest;
-        var onTimer = setInterval(function () {
-            $(crestId).removeClass('lightUp');
-        }, 1000);
-        x++;
+    function lightOff() {
+        $('.game-btn').removeClass('lightUp');
+        $('.game-btn').css('filter', '');
+        clearInterval(sameTimer);
     }
 }
 
-/*function lightOff() {
-           let crest = crestArray[x];
-        let crestId = '#' + crest;
-    var onTimer = setInterval(function(){
-        $(crestId).removeClass('lightUp');
-    }, 5000);
-}*/
-//debugger;
-/*  function lightOn(number) {
- 
-      setTimeout(function () {
-         /* alert('x = '+ x);*/
-/*       if (x < crestArray.length) {
-           let crest = crestArray[x];
-         /*  alert('crestArray[x] = '+ crestArray[x]);*/
-/*          let crestId = '#' + crest;
-          x++;
-         /* $(crestId).addClass('lightUp');*/
 
-/*          $(crestId).css('filter', 'brightness(5)').css('display', 'block');
-          lightOn(x);
-       }
-   }, 2000);
-}
- 
- 
-/*   lightOn(x);
-       /*------function to dim crests stored in crestArray---------*/
-/* function lightOff(number) {
-     setTimeout(function () {*/
-/*  alert('y = '+y);*/
-/*        
-        if (y < crestArray.length) {
-            let crest = crestArray[y];*/
-/*    alert('crestArray[y] = '+crestArray[y]);*/
-/*         let crestId = '#' + crest;
-         y++;*/
-/*$(crestId).removeClass('lightUp');*/
-
-/*         $(crestId).css('filter', 'brightness(1)');
-         lightOff(y);
-     }
- }, 2000);
-}
-lightOff(y);
- 
- 
-}
 /*------function to light up crests stored in crestArray---------*/
 
 /*------function to compare crestArray with playerArray (game selection with user selection)-----------*/
