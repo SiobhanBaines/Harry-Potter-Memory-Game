@@ -104,6 +104,7 @@ There were no issue in performance on the Home page when run on a desktop so I d
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/d73d7a420dbaa9c264dfc72d62d50d6618be677a/reference%20documents/testing%20images/lighthouse/index-desk.png)
 #### Game Page
 ##### before
+
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/d73d7a420dbaa9c264dfc72d62d50d6618be677a/reference%20documents/testing%20images/lighthouse/game-desk-1.png)
 ##### after
 ![image][game-desk-2]()
