@@ -14,21 +14,21 @@ function playGame() {
                 sameTimer = setInterval(lightOff, 500);
             }
             $('.game-btn').removeClass('lightUp');
-            $('.game-btn').css('filter', '');
+           /* $('.game-btn').css('filter', '');*/
             let crest = crestArray[x];
             let crestId = '#' + crest;
             $(crestId).addClass('lightUp');
             x++;
         } else {
             $('.game-btn').removeClass('lightUp')
-            $('.game-btn').css('filter', '');
+          /*  $('.game-btn').css('filter', '');*/
             clearInterval(timer);
         }
     }
 
     function lightOff() {
         $('.game-btn').removeClass('lightUp');
-        $('.game-btn').css('filter', '');
+      /*  $('.game-btn').css('filter', '');*/
         clearInterval(sameTimer);
     }
 }
@@ -130,27 +130,26 @@ $(document).ready(function () {
     $('.hogwarts-crest').hover(function () {
         $(this).css('filter', 'brightness(2)');
     }, function () {
-        $(this).css('filter', 'brightness(1)');
+        $(this).css('filter', '');
     });
     $('.gryffindor').hover(function () {
         $(this).css('filter', 'brightness(2)');
     }, function () {
-        $(this).css('filter', 'brightness(1)');
-    });
+        $(this).css('filter', '');    });
     $('.slytherin').hover(function () {
         $(this).css('filter', 'brightness(2)');
     }, function () {
-        $(this).css('filter', 'brightness(1)');
+        $(this).css('filter', '');
     });
     $('.hufflepuff').hover(function () {
         $(this).css('filter', 'brightness(2)');
     }, function () {
-        $(this).css('filter', 'brightness(1)');
+        $(this).css('filter', '');
     });
     $('.ravenclaw').hover(function () {
         $(this).css('filter', 'brightness(2)');
     }, function () {
-        $(this).css('filter', 'brightness(1)');
+        $(this).css('filter', '');
     });
 });
 
