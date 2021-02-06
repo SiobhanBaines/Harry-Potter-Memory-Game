@@ -95,11 +95,6 @@ footer ul{
     position: absolute;
     overflow: hidden;
 }
-.title{
-    height: 10vh;
-    padding-bottom: 1%;
-    text-align: center;
-}
 .hogwarts-crest{
     text-align: center;
     width: 30%;
@@ -218,12 +213,12 @@ footer ul{
     font-family: "ParryHotter", sans-serif;
 }
 /*----------------------------------------Help*/
-#help{
-    margin-top: 10%;
+.help{
+    padding: 0;
 }
 .instructions{
     width: 80%;
-    padding-left: 33%;
+    padding-left: 20%;
     margin: 0;
     margin-top: 0.5%;
     text-align: left;
@@ -232,8 +227,16 @@ footer ul{
     font-weight:100 ;
 }
 /*---------------------------------------About*/
-#about{
-    margin-top: 10%;
+.about{
+    padding: 10%;
+}
+.info-container{
+    max-height: 100vh;
+    max-width: 100vw;
+    justify-content: center;
+    padding: 15% 0;
+    align-items: center;
+    position: absolute;
 }
 .source{
     font-family: "ubunto", sans-serif;
@@ -245,15 +248,16 @@ footer ul{
     font-size: 175%;
     font-family: "ParryHotter", sans-serif;
     color: #f5cd11;
-    padding: 0%;
+    padding: 5% 0%;
     margin: 0%;
+    text-align: center;
 }
 .subjectJK{
     font-size: 150%;
     font-family: "ParryHotter", sans-serif;
     color: #f5cd11;
-    padding: 0%;
-    margin: 0%;
+    padding: 5% 0%;
+    text-align: center;
 }
 .synopsis{
     width: 90%;
@@ -394,8 +398,9 @@ footer ul{
 /*--------media -- 540 ------*/
 @media (max-width: 540px){
     .school-crest-container,
-    .house-crest-container{
-        padding-top: 15%;
+    .house-crest-container,
+    .info-container{
+        padding-top: 25%;
     }
     h1{
         font-size: 34px; 
@@ -484,5 +489,11 @@ footer ul{
     .lost{
         top: 60%;
         font-size: 150%;
+    }
+    .instructions{
+        width: 100%;
+        padding-left: 20%;
+        font-size: 100%;
+        font-weight:100 ;
     }
 }
