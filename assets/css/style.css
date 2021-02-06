@@ -5,21 +5,11 @@
     font-weight: normal;
     font-style: normal;
 }
-/*----------------------------------------- colour*/
+/*----lighting----*/
 .lightUp{
    filter:brightness(2);
 }
-
-
-@keyframes crestLight {
-    from {filter: brightness(1);}
-    to {filter: brightness(2);}
-}
-element.style{
-    filter: brightness(2);
-}
-
-/*------------------------------------------Global*/
+/*----Global----*/
 html, body{
     animation: fadeIn 500ms;
     margin: 0;
@@ -142,7 +132,6 @@ footer ul{
 .game{
     padding: 0% 30% 0% 30%;
 }
-
 #gryffindor,
 #hufflepuff{
     margin-left: 0%;
@@ -171,23 +160,21 @@ footer ul{
     outline: none;
     border: none;
 }
-
 .board {
-    padding: 10% 5%;
+    padding: 0;
 }
 #message-board{
-    left: 1%; right: 0; top: 55%; bottom: 0; margin: auto; /* center */
+    left: -20%; right: 0; top: 55%; bottom: 0; margin: auto; /* center */
     background-color: #200236;
     display: none;
     border: none;
     outline:none;
     height: 60%;
-    width: 120%;
+    width: 150%;
     z-index: 1;
     position: relative;
     filter:brightness(1);
-}
-
+}   
 .lost{
     display: block;
     width: 70%;
@@ -234,7 +221,6 @@ footer ul{
 #help{
     margin-top: 10%;
 }
-
 .instructions{
     width: 80%;
     padding-left: 33%;
@@ -284,8 +270,8 @@ footer ul{
         transform:rotateX(-10deg);
     }
     to{
-    opacity:1;
-    transform:rotateX(0);
+        opacity:1;
+        transform:rotateX(0);
     }
 }
 /* feature 2*/
@@ -301,11 +287,11 @@ footer ul{
 /*---------------------------------Media Queries*/
 @media (max-width:4096px){
     .navbar-fixed-top{
-    top:0;
-    border-width: 0 0 1px;
+        top:0;
+        border-width: 0 0 1px;
     }
     .navbar-toggle {
-    display: block;
+        display: block;
     }
 }
 @media (max-width: 1024px){
@@ -368,9 +354,8 @@ footer ul{
         width: 60%;
     }
     .game{
-        padding-left: 0;
+      padding: 0 33% 0 0;
     }
-
     #gryffindor.game-btn,
     #hufflepuff.game-btn{
         width: 95%;
@@ -389,15 +374,14 @@ footer ul{
         padding-top: 8%;
     }
     #message-board{
-        margin-top: -25%;
+        margin-top: -20%;
         padding-left: 40%;
         width: 150%;
         height: 100%;
     }
     .lost{
-        top:70%;
-        padding-left: 0%;
-        font-size: 200%;
+        padding: 7% 10% 0 0;
+        font-size: 220%;
     }
     #dobby{
         padding-top: 70%;
@@ -420,10 +404,12 @@ footer ul{
         width: 70%;
         padding-top: 10%;
     }
-    .game{
-        padding-left: 0;
+    .game{ 
+      padding: 0 30% 10% 0;
     }
-
+    #play{
+        padding-top: 0;
+    }
     #gryffindor.game-btn,
     #hufflepuff.game-btn{
         width: 100%;
@@ -447,18 +433,15 @@ footer ul{
     }
     #message-board{
         padding-top: 20%;
-        padding-left: 40%; 
-        width: 150%;
-        height: 110%;
     }
     .lost{
-        margin-top: -7.5%;
-        margin-left: 15%;
-        font-size: 125%;
+        top: 64%;
+        padding: 0 5% 0 0;
+        font-size: 180%;
     }
 }
-/*----------media -- 300px ------*/
-@media (max-width: 300px){
+/*----------media -- 420px ------*/
+@media (max-width: 420px){
     .school-crest-container,
     .house-crest-container{
         padding-top: 30%;
@@ -486,20 +469,20 @@ footer ul{
     #ravenclaw.game-btn{
         width: 140%;
     }
-#play{
-    font-size: 300%;
-}
+    #play{
+        font-size: 300%;
+    }
     #dobby{
         padding-top: 80%;
         width:40%;
     }
     .win{
         padding-top:75%;
-    font-size: 150%;  
-    font-weight: 200;
-
+        font-size: 150%;  
+        font-weight: 200;
     }
     .lost{
-        font-size: 100%;
+        top: 60%;
+        font-size: 150%;
     }
 }
