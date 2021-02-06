@@ -7,35 +7,32 @@ function playGame() {
 
     var timer = setInterval(lightOn, 1000);
     var sameTimer = setInterval(lightOff, 0);
-    function lightOn() {
-        if (x < crestArray.length) {
-            if ((crestArray.length > 1) &&
-                (crestArray[x] === crestArray[x + 1])) {
-                sameTimer = setInterval(lightOff, 500);
-            }
-            $('.game-btn').removeClass('lightUp');
-           /* $('.game-btn').css('filter', '');*/
-            let crest = crestArray[x];
-            let crestId = '#' + crest;
-            $(crestId).addClass('lightUp');
-            x++;
-        } else {
-            $('.game-btn').removeClass('lightUp')
-          /*  $('.game-btn').css('filter', '');*/
-            clearInterval(timer);
-        }
-    }
+}
+/*------function to light up crests stored in crestArray---------*/
+function lightOn() {
 
-    function lightOff() {
+    if (x < crestArray.length) {
+        if ((crestArray.length > 1) &&
+            (crestArray[x] === crestArray[x + 1])) {
+            sameTimer = setInterval(lightOff, 500);
+        }
         $('.game-btn').removeClass('lightUp');
-      /*  $('.game-btn').css('filter', '');*/
-        clearInterval(sameTimer);
+        let crest = crestArray[x];
+        let crestId = '#' + crest;
+        $(crestId).addClass('lightUp');
+        x++;
+    } else {
+        $('.game-btn').removeClass('lightUp')
+        clearInterval(timer);
     }
 }
+/*------function to remove the lightUp class on a special interval when the same 
+            crest is being lit up next---------*/
+function lightOff() {
 
-
-/*------function to light up crests stored in crestArray---------*/
-
+    $('.game-btn').removeClass('lightUp');
+    clearInterval(sameTimer);
+}
 /*------function to compare crestArray with playerArray (game selection with user selection)-----------*/
 function validation() {
 
@@ -135,7 +132,8 @@ $(document).ready(function () {
     $('.gryffindor').hover(function () {
         $(this).css('filter', 'brightness(2)');
     }, function () {
-        $(this).css('filter', '');    });
+        $(this).css('filter', '');
+    });
     $('.slytherin').hover(function () {
         $(this).css('filter', 'brightness(2)');
     }, function () {
@@ -156,7 +154,6 @@ $(document).ready(function () {
 /*---------------Global variables-------------*/
 let i = 0;
 let j = 0;
-
 var x = 0;
 var y = 0;
 let nextLevel = false;

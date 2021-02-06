@@ -109,6 +109,9 @@ I found out how to create the Home page movement and opacity from this YouTube v
 ### feature 3
 My mentor Kyeza Arnold suggested a wooden background for the pop-up message. I found this more difficult to read and wanted a border around the font to make it stand out more. I added a black boarder and a red shadow. [css-font-border](https://stackoverflow.com/questions/2570972/css-font-border). I later changed the background to parchment which was suggested by my daughter.
 
+I was struggling to centralise some of the items and came across this line of code in stackoverflow. Sadly I did not keep a not of the web address or who provided it to stackoverflow. 
+    left: 0; right: 0; top: 0; bottom: 0; margin: auto; /* center */
+    
 When using Google to find out more information about various parts of my code that were not working as I expected I often used[w3schools](https://www.w3schools.com/default.asp), [stackoverflow](https://stackoverflow.com/questions/tagged/html) and [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/).
 
 

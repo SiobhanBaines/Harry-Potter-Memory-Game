@@ -193,6 +193,7 @@ footer ul{
     z-index: 3;
     position: absolute;
     outline: none;
+    /* the line of code below was found in stackoverflow - should have kept a note of the address */
     left: 0; right: 0; top: 0; bottom: 0; margin: auto; /* center */
 }
 .win{
@@ -287,7 +288,6 @@ footer ul{
         opacity: 1;
     }
 }
-
 /*---------------------------------Media Queries*/
 @media (max-width:4096px){
     .navbar-fixed-top{
