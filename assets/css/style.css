@@ -86,7 +86,7 @@ footer ul{
 }
 /*---------------------------------------Home Page*/
 .school-crest-container{
-    animation: moveUp 1s; /*feature 1 - dcode */
+    animation: moveUp 2s; /*feature 1 - dcode */
     max-height: 100vh;
     max-width: 100vw;
     justify-content: center;
@@ -159,7 +159,7 @@ footer ul{
     padding: 0;
 }
 #message-board{
-    left: -20%; right: 0; top: 55%; bottom: 0; margin: auto; /* center */
+    left: -20%; right: 0; top: 30%; bottom: 0; margin: auto; /* center */
     background-color: #200236;
     display: none;
     border: none;
@@ -178,7 +178,7 @@ footer ul{
     z-index: 5;
     text-align: center;
     align-items: center;
-    left: 5%; right: 0; top: 75%; bottom: 0; margin: auto; /* center */
+    left: 5%; right: 0; top: 55%; bottom: 0; margin: auto; /* center */
     border: none;
     background: none;
     font-size: 200%;  
@@ -271,7 +271,7 @@ footer ul{
 @keyframes moveUp{
     from{
         opacity:0;
-        transform:rotateX(-10deg);
+        transform:rotateX(-20deg);
     }
     to{
         opacity:1;
@@ -329,7 +329,7 @@ footer ul{
         height: 80%;
     }
     .lost{
-        padding-top: 12.5%;
+        padding-top: 10%;
         padding-left: 10%;
         font-size: 240%; 
     }
@@ -384,7 +384,7 @@ footer ul{
         height: 100%;
     }
     .lost{
-        padding: 7% 10% 0 0;
+        padding: 5% 10% 0 0;
         font-size: 220%;
     }
     #dobby{
@@ -400,7 +400,7 @@ footer ul{
     .school-crest-container,
     .house-crest-container,
     .info-container{
-        padding-top: 25%;
+        padding-top: 15%;
     }
     h1{
         font-size: 34px; 
@@ -410,10 +410,14 @@ footer ul{
         padding-top: 10%;
     }
     .game{ 
-      padding: 0 30% 10% 0;
+      padding: 0 30% 30% 0;
+    }
+    .top-row{
+        padding-top: 0;
     }
     #play{
         padding-top: 0;
+        padding-bottom: 30%;
     }
     #gryffindor.game-btn,
     #hufflepuff.game-btn{
@@ -430,17 +434,17 @@ footer ul{
         margin-right: 15%;
     }
     #dobby{
-        padding-top: 70%;
+        padding-top: 30%;
         width:45%;
     }
     .win{
-        padding-top:65%;
+        padding-top:45%;
     }
     #message-board{
         padding-top: 20%;
     }
     .lost{
-        top: 64%;
+        top: 30%;
         padding: 0 5% 0 0;
         font-size: 180%;
     }
@@ -478,17 +482,17 @@ footer ul{
         font-size: 300%;
     }
     #dobby{
-        padding-top: 80%;
+        padding-top: 40%;
         width:40%;
     }
     .win{
-        padding-top:75%;
-        font-size: 150%;  
+        padding-top:55%;
+        font-size: 120%;  
         font-weight: 200;
     }
     .lost{
-        top: 60%;
-        font-size: 150%;
+        top: 25%;
+        font-size: 130%;
     }
     .instructions{
         width: 100%;

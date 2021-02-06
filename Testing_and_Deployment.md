@@ -33,9 +33,10 @@ With the help of tutor support I found the fix was to call the function using jq
 When the game lights up the crests, it should switch on and then switch off the crest light up after a pause before lighting up the next crest.
 Using [setTimeout(() =>{$('.game-btn').removeClass("lightUp");},delay);] or [setInterval(() =>{$('.game-btn').removeClass("lightUp");},delay);] work in that they cause the crest to be lit up for a period of time so the player can see it light up but then they stay lit when the next one lights up so that more than one crest is lit at the same time.
 Using google I found [a sleep function](https://www.sitepoint.com/delay-sleep-pause-wait/)
-I ended up talking to tutor support.
+I ended up talking to tutor support. After much confusion on my part and a great deal of patience from the tutors I finally got the waiting feature to work using setInterval. I added a setInterval to the lighting up of the crests with an if statement to drop out of the setInterval which cleared the interval. The final issue was that if the same crest needed to light up more than once consecutively it looked like the brightness did not change. I needed to add a setInterval to switch the light off after a delay in between the 2 matching crests. 
 
 ### The menu jumps to the left when expanding
+I eventually realised this was happening because the wording was wider than the hamburger icon. To stop it jumping around I moved the icon to the left. This keeps it out of the way of the game and keeps its positioning in the same place especially on smaller devices.
 
 ## User Story One Testing
 The memory test is covered by the patterns created that the player needs to replicate.
@@ -43,6 +44,7 @@ The menu gives easy access to the instructions on the 'How to play' page. - ask 
 The menu gives easy access to some information about the theme, 'Harry Potter'.
 
 ## User Story Two Testing
+
 
 ## Performance Testing using Lighthouse
 

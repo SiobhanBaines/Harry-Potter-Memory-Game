@@ -7,7 +7,7 @@ If the player is unsuccessful they will receive a message from the house of the 
 
  ![image] /*(https://github.com/SiobhanBaines/Siobhan-Baines-MS1-Portfolio/blob/a9b3ae92a03364be3599e6b646f995625c87e66b/reference_documents/images_readme/amiresponsive_image.png)*/
 
-[View the live project here] /*(https://siobhanbaines.github.io/Siobhan-Baines-MS2-HP-Game/)*/
+[View the live project here] (https://siobhanbaines.github.io/Siobhan-Baines-MS2-HP-Game/)
 
 
 ## User Experience (UX)
@@ -15,7 +15,7 @@ If the player is unsuccessful they will receive a message from the house of the 
 ### *User Stories*
 
 1. **A new visitor to the site**
-I am looking for a game that will help improve my memory, is easy to play and looks fun. The instructions need to easy to access and follow. It might be interesting to know aout the background to the game and its design.
+I am looking for a game that will help improve my memory, is easy to play and looks fun. The instructions need to easy to access and follow. It might be interesting to know aout the background to the game and its design. I love Harry Potter.
   
 2. **The site creator**
 I want a game that uses different coloured lights to create a 'copy me' routine. The game must give feedback in a fun way relating to Harry Potter and the Hogwarts houses. 
@@ -42,15 +42,11 @@ There needs to be a menu containing an instructions page and a page about both H
 #### *Out of Scope*
 It would be nice for the game to have a leader board and the ability to create a user account so that the player could compete against friends.
 
-![image]()
 ### *Structure*
 The school crest will appear in the centre of the screen
 The house crests will be grouped together in sqaure in the centre.
 The win and lose messages will appear in the centre of the screen.
 A dropdown menu will allow the player access to instructions of how to play the game and some details about the story of Harry Potter and the author, J K Rawling.
-
-![image]()
-
 
 ### *Skeleton*
 #### Wireframes
@@ -59,10 +55,14 @@ A dropdown menu will allow the player access to instructions of how to play the 
 [Tablet]
 [Mobile]
 
-###### Final Design
-[Desktop]
-[Tablet]
-[Mobile]
+###### Design modifications
+Since the orignal design there have been some changes.
+1. Originally there was only going to be a menu travelable instructions page but I decided to add an about page creating the need for a menu to select the pages.
+The menu was moved to the left hand side because, when using the bootstrap navbar 'hamburger icon' on the right on smaller devices, the icon jumped left to expand the dropdown menu which I thought looked untidy.  
+2. I decided against a score tally because it seemed unnecessary for the enjoyment of the game. Instead I decided the player would have a better UX if a recognisable friendly character from Harry Potter congratulated them. I tried to keep the wording of the message in tune with the character.
+3. The wording of the losing messages stayed very close to the orignal design with some adjustments to help with the cosmetic UX.
+4. My mentor suggested a wooden background for the losing messages and my daughter suggests a piece of parchment which was more in keeping with the Harry Potter theme.
+5. I also decided clearing the screen and showing the losing message in the centre was more impactful and would be easier to read on smaller devices.
 
 ### *Surface*
 The images I am using on the wesite include the school crest, the four house crests, Dobby and some parchment.(see below under Media)
@@ -73,7 +73,13 @@ The win message will appear below Dobby in yellow with a red boarder.
 The lose messages will appear on the parchement in black.
 The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. (credit!!!)
 The font on the How to play and About pages will be white so it stands out from the page making it easy to read,
-[index_image](), 
+![Hogwarts Crest]()
+![Gryffindor Crest]()
+![Slytherin Crest]()
+![Ravenclaw Crest]()
+![Hufflepuff Crest]()
+![Parchment]()
+![Dobby]()
 
 ## Features
 ### Existing Features
@@ -82,12 +88,15 @@ When the home page loads it's position and opacity changes bringing the webpage 
 #### feature 2
 I wanted the transition from the home page to the game page to be softer to appear smoother for the player.
 #### feature 3
-When the player fails to follow the pattern created by the crests lighting up a message relating to the last crest in the pattern pops up on a wooden board in yellow with a white boarder.
+When the player fails to follow the pattern created by the crests lighting up, a message relating to the last crest in the pattern pops up on a piece of parchment in the middle of the screen in black writing.
 
+### Future Features
+#### feature 1
+When the crests light up it might be fun to have a wizarding sort of sound for each house.
+#### feature 2
+The game could be expanded to become a multi-player game with the incorporation of a leader board. This would also require a scoreboard to be developed.
 ## Technologies Used
 CSS3, HMTL5, Javscript, JQuery, Bootstrap Framework, Google, Fontawesome
-
-
 
 ##### Font style
 Parry Hotter and Ubuntu.
@@ -111,16 +120,13 @@ Below are the links for each piece of clipart:
 [Slytherin Crest](https://www.pngitem.com/middle/iibxmTw_harry-potter-mug-slytherin-crest-png-download-slytherin/)
 [Ravenclaw Crest](https://www.pngitem.com/middle/TRwmxT_crest-png-for-free-download-on-ravenclaw-hogwarts/)
 [Hufflepuff Crest](https://www.pinclipart.com/pindetail/iTiJwxo_crest-banner-png-harry-potter-hufflepuff-crest-clipart/)
-[Message Background](https://pxhere.com/en/photo/1370487)
 [parchment](https://www.pinclipart.com/pindetail/mTmTw_old-paper-cliparts-old-burnt-paper-background-png/)
-[Dobby]()
+[Dobby](https://www.pinclipart.com/maxpin/iihmho/)
 
-I then used [icolorpalette](https://icolorpalette.com/) to get a colour palette from the image I used for index-image.
+I then used [icolorpalette](https://icolorpalette.com/) to get a colour palette from the Hogwarts School Crest. This did not give me the background colour.
 
 # Deployment
 In Gitpod the bottom area of the screen is where git commands are entered.
-
-![image]()
 
 1.	If you have been running the 8000 port you will need to use Ctrl + Z to escape back and use the command entry. This line will appear “gitpod /workspace/Siobhan-Baines-MS2-HP-Game $” allowing commands to be entered.
 2.	Make sure any changes that have been made are save by selecting the ‘File’ tab and ‘Save All’
@@ -133,7 +139,3 @@ In Gitpod the bottom area of the screen is where git commands are entered.
 [image!]deployment
 9.  After a few minutes the message will change and the site will be published.
 [image!]deployed
-
-### Lessons learned
-
-
