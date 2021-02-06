@@ -196,7 +196,7 @@ footer ul{
     z-index: 5;
     text-align: center;
     align-items: center;
-    left: 0; right: 0; top: 85%; bottom: 0; margin: auto; /* center */
+    left: 5%; right: 0; top: 75%; bottom: 0; margin: auto; /* center */
     border: none;
     background: none;
     font-size: 200%;  
