@@ -178,7 +178,7 @@ footer ul{
     padding: 0;
 }
 #message-board{
-    left: 5em; right: 0; top: 15em; bottom: 0; margin: auto; /* center */
+    left: 5em; right: 0; top: 25em; bottom: 0; margin: auto; /* center */
     background-color: #200236;
     display: none;
     border: none;
@@ -198,7 +198,7 @@ footer ul{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    left: 1em; right: 0; top: 6em; bottom: 0; margin: auto; /* center */
+    left: 1em; right: 0; top: 11em; bottom: 0; margin: auto; /* center */
     border: none;
     background: none;
     font-size: 200%;  

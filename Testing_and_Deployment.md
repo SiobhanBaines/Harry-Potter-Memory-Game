@@ -24,7 +24,7 @@ I then added some media query statements which made the crests appear correctly 
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/crest-col-md.png)
 
 I then changed the order round of the col classes and adjusted the media queries which appears to have created the image I desire. All four crests together in the centre.
-
+ 
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/crest-col-swap.png)
 
 ### Issue with switch clause for user selection
@@ -49,7 +49,7 @@ The menu gives easy access to the instructions on the 'How to play' page. - aske
 The menu gives easy access to some information about the theme, 'Harry Potter'.
 
 I believe the game hit the mark, at least for my 10-year-old niece who messaged me saying she loved the game.
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/d73d7a420dbaa9c264dfc72d62d50d6618be677a/reference%20documents/testing%20images/daisy.png).
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/master/reference%20documents/testing%20images/daisy.png).
 
 ## Unit Testing
 ### How to Unit Test
@@ -75,15 +75,17 @@ I believe the game hit the mark, at least for my 10-year-old niece who messaged 
 ### Functionality Testing
 #### Menu
 I have made the menu appear differently on the home page to all the other pages because I think there is no need to have a home page menu option when you first get to the website.
-
+  
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/home-page-menu.png)
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/menu.png)
+
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/master/reference%20documents/testing%20images/menu.png)
 
 All menu options were tested to ensure they all take the site visitor to the correct destination.
 
 #### Game
 The player needs to click on the Hogwarts school crest on the landing page to enter the game.
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/hogwarts.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/master/reference%20documents/testing%20images/hogwarts.png)
+
 When the game loads there is a play button ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/play-button.png) 
 
 which the play clicks to start the game. Once the game starts it selects one of the four houses to light up the crest. Either Gryffindor, Slytherin, Hufflepuff or Ravenclaw. 

@@ -69,8 +69,8 @@ The menu was moved to the left-hand side because, when using the bootstrap navba
 4. The headings will be in a bright yellow to represent gold.
 5. The win message will appear below Dobby in yellow with a red boarder.
 6. The lose messages will appear on the parchment in black.
-The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. [font by Anke Arnold](https://www.anke-art.de)
-The font on the How to play and About pages will be white so it stands out from the page making it easy to read.
+7. The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. Font [by Anke Arnold](https://www.anke-art.de)
+8. The font on the How to play and About pages will be white so it stands out from the page making it easy to read.
 #### Hogwarts School Crest
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/hogwarts_crest.png)
 #### Gryffindor House Crest
@@ -132,12 +132,25 @@ When using Google to find out more information about various parts of my code th
 
 The images used in this game are all free clipart available on [pinclipart](https://www.pinclipart.com) and [pngitem](https://www.pngitem.com). 
 Below are the links for each piece of clipart:
-[Hogwarts Crest](https://www.pngitem.com/middle/iJiiRhb_hogwarts-crest-transparent-background-hd-png-download/), 
-[Gryffindor Crest](https://www.pngitem.com/middle/mRxxbi_transparent-gryffindor-png-harry-potter-house-crests-png/), 
-[Slytherin Crest](https://www.pngitem.com/middle/iibxmTw_harry-potter-mug-slytherin-crest-png-download-slytherin/), 
-[Ravenclaw Crest](https://www.pngitem.com/middle/TRwmxT_crest-png-for-free-download-on-ravenclaw-hogwarts/), 
-[Hufflepuff Crest](https://www.pinclipart.com/pindetail/iTiJwxo_crest-banner-png-harry-potter-hufflepuff-crest-clipart/), 
-[parchment](https://www.pinclipart.com/pindetail/mTmTw_old-paper-cliparts-old-burnt-paper-background-png/), 
+Contributor: Martijn Rooijakkers
+[Hogwarts Crest](https://www.pngitem.com/middle/iJiiRhb_hogwarts-crest-transparent-background-hd-png-download/)
+
+Contributor: Magnificients
+[Gryffindor Crest](https://www.pngitem.com/middle/mRxxbi_transparent-gryffindor-png-harry-potter-house-crests-png/)
+
+Contributor: Frau
+[Slytherin Crest](https://www.pngitem.com/middle/iibxmTw_harry-potter-mug-slytherin-crest-png-download-slytherin/)
+
+Contributor: T Shakepepper
+[Ravenclaw Crest](https://www.pngitem.com/middle/TRwmxT_crest-png-for-free-download-on-ravenclaw-hogwarts/)
+
+Owner assumed to be PinClipart
+[Hufflepuff Crest](https://www.pinclipart.com/pindetail/iTiJwxo_crest-banner-png-harry-potter-hufflepuff-crest-clipart/)
+ 
+Owner assumed to be PinClipart
+[parchment](https://www.pinclipart.com/pindetail/mTmTw_old-paper-cliparts-old-burnt-paper-background-png/)
+
+Owner assumed to be PinClipart
 [Dobby](https://www.pinclipart.com/maxpin/iihmho/)
 
 I then used [icolorpalette](https://icolorpalette.com/) to get a colour palette from the Hogwarts School Crest. This did not give me the background colour.
