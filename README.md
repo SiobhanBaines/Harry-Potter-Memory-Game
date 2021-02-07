@@ -69,7 +69,7 @@ The menu was moved to the left-hand side because, when using the bootstrap navba
 4. The headings will be in a bright yellow to represent gold.
 5. The win message will appear below Dobby in yellow with a red boarder.
 6. The lose messages will appear on the parchment in black.
-7. The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. Font [by Anke Arnold](https://www.anke-art.de)
+7. The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. 
 8. The font on the How to play and About pages will be white so it stands out from the page making it easy to read.
 #### Hogwarts School Crest
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/hogwarts_crest.png)

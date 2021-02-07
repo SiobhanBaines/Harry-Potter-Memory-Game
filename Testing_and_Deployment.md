@@ -86,7 +86,7 @@ All menu options were tested to ensure they all take the site visitor to the cor
 The player needs to click on the Hogwarts school crest on the landing page to enter the game.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/master/reference%20documents/testing%20images/hogwarts.png)
 
-When the game loads there is a play button ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/play-button.png) 
+When the game loads there is a play button ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/8daa2e8399fd3a506042a108513f3a278a1addc8/reference%20documents/testing%20images/play-button.png) 
 
 which the play clicks to start the game. Once the game starts it selects one of the four houses to light up the crest. Either Gryffindor, Slytherin, Hufflepuff or Ravenclaw. 
 On this image Gryffindor house crest is lit up.
