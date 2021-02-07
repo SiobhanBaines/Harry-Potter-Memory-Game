@@ -134,9 +134,10 @@ Issue 4. I change the CSS to preload the font
 #### Game Page
 ##### before
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/lighthouse/game-mobile-1.png)
+Issue 1. Too many images that were potentially too large. I reduced them using paint 3D and [TinyPNG](https://tinypng.com/).
+Issue 2. I added - ?display="swap" to the Fontawesome CDN which preloads the font 
 ##### after
-![image][game-mobile-2]()
-#### Help Page
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/lighthouse/game-mobile-2.png)
 ##### before  
 All the lights are green on the lighthouse dashboard - no need to change anything.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/14e5befc4eaeae3422e793424896f1828e6d7294/reference%20documents/testing%20images/lighthouse/help-mobile.png)

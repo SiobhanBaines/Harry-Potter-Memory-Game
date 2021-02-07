@@ -160,16 +160,15 @@ footer ul{
     padding: 0;
 }
 #message-board{
-    left: -20%; right: 0; top: 30%; bottom: 0; margin: auto; /* center */
+    left: 5em; right: 0; top: 15em; bottom: 0; margin: auto; /* center */
     background-color: #200236;
     display: none;
     border: none;
     outline:none;
-    height: 60%;
-    width: 150%;
+    height: 40vh;
+    width: 55vw;
     z-index: 1;
-    position: relative;
-    filter:brightness(1);
+    position: absolute;
 }   
 .lost{
     display: block;
@@ -179,7 +178,7 @@ footer ul{
     z-index: 5;
     text-align: center;
     align-items: center;
-    left: 5%; right: 0; top: 55%; bottom: 0; margin: auto; /* center */
+    left: 1em; right: 0; top: 6em; bottom: 0; margin: auto; /* center */
     border: none;
     background: none;
     font-size: 200%;  
@@ -324,14 +323,13 @@ footer ul{
         width: 150%;
     }
     #message-board{
-        padding-top: 30%;
-        left: -25%;
-        width: 180%;
-        height: 80%;
+        top: 45em;
+        height: 20vh;
+        width: 60vw;
     }
     .lost{
-        padding-top: 10%;
-        padding-left: 10%;
+        top: 17em;
+        left: 2em;
         font-size: 240%; 
     }
     #dobby{
@@ -379,14 +377,13 @@ footer ul{
         padding-top: 8%;
     }
     #message-board{
-        margin-top: -20%;
-        padding-left: 40%;
-        width: 150%;
-        height: 100%;
+        left: 1em;
+        width: 70vw;
     }
     .lost{
-        padding: 5% 10% 0 0;
-        font-size: 220%;
+        top: 20em;
+        left: 1em;
+        font-size: 210%;
     }
     #dobby{
         padding-top: 70%;
@@ -442,11 +439,12 @@ footer ul{
         padding-top:45%;
     }
     #message-board{
-        padding-top: 20%;
+        top: 25vh;
+        height: 25vh;
+        width: 80vw;
     }
     .lost{
-        top: 30%;
-        padding: 0 5% 0 0;
+        top: 5em;
         font-size: 180%;
     }
 }
@@ -492,13 +490,18 @@ footer ul{
         font-weight: 200;
     }
     .lost{
-        top: 25%;
-        font-size: 130%;
+        top: 4em;
     }
     .instructions{
         width: 100%;
         padding-left: 20%;
         font-size: 100%;
         font-weight:100 ;
+    }
+}
+/*----------media -- 360px ------*/
+@media (max-width: 360px){
+        .lost{
+        top: 3em;
     }
 }
