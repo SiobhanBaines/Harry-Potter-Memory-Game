@@ -62,7 +62,7 @@ I believe the game hit the target. My 10 year old niece messaged me ![image](htt
     Use [validator.w3](https://validator.w3.org/) to check the HTML
     Use [jigsaw.w3](https://jigsaw.w3.org/css-validator/) to check the CSS
     Use [JSHint](https://jshint.com/) to check the Javascript
-    Use a documentation application to check the spelling such as word.
+    Use a documentation application to check the spelling such as word but remember word will not always pick up incorrect spelling such as thrid instead of third. 
 3. In Chrome dev tools use Lighthouse to check the performance of the website
 
 ### Functionality Testing
@@ -106,33 +106,44 @@ There were no issue in performance on the Home page when run on a desktop so I d
 ##### before
 
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/d73d7a420dbaa9c264dfc72d62d50d6618be677a/reference%20documents/testing%20images/lighthouse/game-desk-1.png)
+()?????????????? document does not have a meta description
 ##### after
-![image][game-desk-2]()
+![image][game-desk-2]
 #### Help Page  
 ##### before
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/d73d7a420dbaa9c264dfc72d62d50d6618be677a/reference%20documents/testing%20images/lighthouse/help-desk-1.png)
-##### after
-![image][help-desk-2]()
+()?????????????? document does not have a meta description
+
 #### About Page
 ##### before
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/d73d7a420dbaa9c264dfc72d62d50d6618be677a/reference%20documents/testing%20images/lighthouse/about-desk-1.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/14e5befc4eaeae3422e793424896f1828e6d7294/reference%20documents/testing%20images/lighthouse/about-desk-1.png)
+()?????????????? document does not have a meta description
+I added rel="noopener" to the social media a tags which improved Best Practices score.
 ##### after
 ![image][about-desk-2]()
 ### Mobile
 #### Home Page
 ##### before
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/lighthouse/index-mobile-1.png)
+Issue 1. The image was over 420KB. I used paint 3D and [TinyPNG](https://tinypng.com/) to reduce the size to 43KB which improved the performance.
+Issue 2. In the scripts section I had two Javascripts that lighthouse said were duplicates so I commented out the CDN version which improved performance further. 
+Issue 3. I was linking to Fontawesome which is not used in this HTML file.
+Issue 4. I change the CSS to preload the font
 ##### after
-![image][index-mobile-2]()
+![image][index-mobile-2](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/14e5befc4eaeae3422e793424896f1828e6d7294/reference%20documents/testing%20images/lighthouse/index-mobile-2.png)
 #### Game Page
 ##### before
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/lighthouse/game-mobile-1.png)
 ##### after
 ![image][game-mobile-2]()
-#### Help Page  
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/d73d7a420dbaa9c264dfc72d62d50d6618be677a/reference%20documents/testing%20images/lighthouse/help-mobile.png)
+#### Help Page
+##### before  
+All the lights are green on the lighthouse dashboard - no need to change anything.
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/14e5befc4eaeae3422e793424896f1828e6d7294/reference%20documents/testing%20images/lighthouse/help-mobile.png)
+##### after
+I reran
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/14e5befc4eaeae3422e793424896f1828e6d7294/reference%20documents/testing%20images/lighthouse/help-mobile-2.png)
 #### About Page
 ##### before
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/d73d7a420dbaa9c264dfc72d62d50d6618be677a/reference%20documents/testing%20images/lighthouse/about-mobile-1.png)
-##### after
-![image][about-mobile-2]()
+All the lights are green on the lighthouse dashboard - no need to change anything.
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/14e5befc4eaeae3422e793424896f1828e6d7294/reference%20documents/testing%20images/lighthouse/about-mobile.png)

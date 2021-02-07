@@ -4,6 +4,7 @@
     src: url('fonts/ParryHotter.ttf');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 /*----lighting----*/
 .lightUp{
