@@ -50,7 +50,7 @@ function validation() {
 }
 /*------function to determine which house won-------*/
 function houseMessage() {
-
+    $('h1').hide();
     $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').hide();
     $('#message-board').show();
     switch (winningCrest) {
@@ -76,6 +76,7 @@ function houseMessage() {
 }
 /*---function to let the player know they have won--*/
 function winnerMessage() {
+    $('h1').hide();
     $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').hide();
     $('#dobby').show();
     $('section>div>div:last>div:first').append(`<p class="win">Dobby thinks you are very clever</p>`);
@@ -97,6 +98,7 @@ $(document).ready(function () {
     });
     /*---------reset to begin the game again ----------*/
     $(document).on('click', '.lost', function reStart() {
+        $('h1').show();
         $('#message-board').hide();
         let message = document.getElementsByTagName('p')[0];
         message.remove();
@@ -106,7 +108,7 @@ $(document).ready(function () {
     });
     /*------play next level of game -------------------*/
     $(document).on('click', '#dobby', function levelUp() {
-
+        $('h1').show();
         $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').show();
         $('#dobby').hide();
         let message = document.getElementsByTagName('p')[0];
