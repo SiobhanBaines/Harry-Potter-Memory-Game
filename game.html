@@ -12,7 +12,7 @@
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <link rel="preload" href="assets/css/fonts/ParryHotter.ttf" as="font" type="text/font">
+    <link rel="preload" as="font" href="assets/css/fonts/ParryHotter.ttf"  type="text/font">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     
 </head>
@@ -52,9 +52,12 @@
             </div>
             <div class="row">
                 <div class="col game">
+                    <!-- Player winning image -->
                     <input id="dobby" type="image" src="assets/images/dobby.png" alt="dobby">
+                    <!-- Player losing image -->
                     <img id="message-board" src="assets/images/paper.png" alt="message-board">
-                    <button id="play"><i class="far fa-play-circle"></i></button>
+                    <!-- Play button -->
+                    <button id="play" aria-label="Play"><i class="far fa-play-circle"></i></button>
                     <div class="row top-row">
                         <div class="col-6">
                             <input id="gryffindor" type="image" src="assets/images/gryffindor_crest.png"

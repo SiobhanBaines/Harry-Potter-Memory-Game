@@ -5,7 +5,7 @@ In the first round the game will randomly select one of the 4 house crests and l
 If the player is successful they will receive a message from Dobby the house elf.
 If the player is unsuccessful they will receive a message from the house of the last crest in the pattern for that round of the game.
 
- ![image] /*(https://github.com/SiobhanBaines/Siobhan-Baines-MS1-Portfolio/blob/a9b3ae92a03364be3599e6b646f995625c87e66b/reference_documents/images_readme/amiresponsive_image.png)*/
+ ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/ami_responsivedesign.png)
 
 [View the live project here] (https://siobhanbaines.github.io/Siobhan-Baines-MS2-HP-Game/)
 
@@ -73,13 +73,13 @@ The win message will appear below Dobby in yellow with a red boarder.
 The lose messages will appear on the parchement in black.
 The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. [font by Anke Arnold](www.anke-art.de)
 The font on the How to play and About pages will be white so it stands out from the page making it easy to read,
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/hogwarts_crest.png)
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/gryffindor_crest.png)
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/slytherin_crest.png)
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/ravenclaw_crest.png)
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/hufflepuff_crest.png)
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/paper.png)
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/assets/images/dobby.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/hogwarts_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/gryffindor_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/slytherin_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/ravenclaw_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/hufflepuff_crest.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/paper.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/dobby.png)
 
 ## Features
 ### Existing Features

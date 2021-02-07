@@ -3,7 +3,7 @@ function playGame() {
 
     let crest = crests[Math.floor(Math.random() * crests.length)];
     crestArray.push(crest);
-    i = crestArray.length - 1;
+  /*  i = crestArray.length - 1;*/
 
     var timer = setInterval(lightOn, 1000);
     var sameTimer = setInterval(lightOff, 0);
@@ -44,7 +44,7 @@ function validation() {
     if (is_same) {
         winnerMessage();
     } else {
-        winningCrest = crestArray[j];
+        winningCrest = crestArray[p];
         houseMessage();
     }
 }
@@ -87,16 +87,16 @@ function winnerMessage() {
 
 $(document).ready(function () {
 
-    /*---------------Begin the Game---------------------*/
+/*---------------Begin the Game---------------------*/
     $('#play').click(function start() {
         $("#play").hide();
         if (!nextLevel && start) {
-            i = 0;
-            j = 0;
+            p = 0;
+          /*  j = 0;*/
         }
         playGame();
     });
-    /*---------reset to begin the game again ----------*/
+/*---------reset to begin the game again ----------*/
     $(document).on('click', '.lost', function reStart() {
         $('h1').show();
         $('#message-board').hide();
@@ -106,7 +106,7 @@ $(document).ready(function () {
         start = true;
         location.reload();
     });
-    /*------play next level of game -------------------*/
+/*------play next level of game -------------------*/
     $(document).on('click', '#dobby', function levelUp() {
         $('h1').show();
         $('#gryffindor, #hufflepuff, #slytherin, #ravenclaw, .title').show();
@@ -118,15 +118,16 @@ $(document).ready(function () {
 
         playGame();
     });
-    /*------function to load playerArray with user selected crest---------*/
+/*------function to load playerArray with user selected crest---------*/
     $(document).on('click', '.game-btn', function selectHouse() {
         playerArray.push(this.id);
 
         if (crestArray.length === playerArray.length) {
-            j = playerArray.length - 1;
+            p = playerArray.length - 1;
             validation();
         }
     });
+/*-_--hover brightness----*/
     $('.hogwarts-crest').hover(function () {
         $(this).css('filter', 'brightness(2)');
     }, function () {
@@ -155,10 +156,9 @@ $(document).ready(function () {
 });
 
 /*---------------Global variables-------------*/
-let i = 0;
-let j = 0;
-var x = 0;
-var y = 0;
+let p = 0;
+let x = 0;
+let y = 0;
 let nextLevel = false;
 let start = true;
 let playerArray = [];
