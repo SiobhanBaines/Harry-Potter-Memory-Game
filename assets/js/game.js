@@ -7,32 +7,33 @@ function playGame() {
 
     var timer = setInterval(lightOn, 1000);
     var sameTimer = setInterval(lightOff, 0);
-}
-/*------function to light up crests stored in crestArray---------*/
-function lightOn() {
+    /*------function to light up crests stored in crestArray---------*/
+    function lightOn() {
 
-    if (x < crestArray.length) {
-        if ((crestArray.length > 1) &&
-            (crestArray[x] === crestArray[x + 1])) {
-            sameTimer = setInterval(lightOff, 500);
+        if (x < crestArray.length) {
+            if ((crestArray.length > 1) &&
+                (crestArray[x] === crestArray[x + 1])) {
+                sameTimer = setInterval(lightOff, 500);
+            }
+            $('.game-btn').removeClass('lightUp');
+            let crest = crestArray[x];
+            let crestId = '#' + crest;
+            $(crestId).addClass('lightUp');
+            x++;
+        } else {
+            $('.game-btn').removeClass('lightUp')
+            clearInterval(timer);
         }
+    }
+    /*------function to remove the lightUp class on a special interval when the same 
+                crest is being lit up next---------*/
+    function lightOff() {
+
         $('.game-btn').removeClass('lightUp');
-        let crest = crestArray[x];
-        let crestId = '#' + crest;
-        $(crestId).addClass('lightUp');
-        x++;
-    } else {
-        $('.game-btn').removeClass('lightUp')
-        clearInterval(timer);
+        clearInterval(sameTimer);
     }
 }
-/*------function to remove the lightUp class on a special interval when the same 
-            crest is being lit up next---------*/
-function lightOff() {
 
-    $('.game-btn').removeClass('lightUp');
-    clearInterval(sameTimer);
-}
 /*------function to compare crestArray with playerArray (game selection with user selection)-----------*/
 function validation() {
 
