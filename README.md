@@ -25,7 +25,7 @@ I want a game that uses different coloured lights to create a 'copy me' routine.
 Since I am using Harry Potter as the theme I feel it is only right to talk a little about the author of Harry Potter in an about section.
 
 ### *Strategy*
-The objective of this project is to create an interactive and fun game for a player which they will want to play again and again. A player must want to interact with the website and the website must inturn react to the interaction of the player. When the player first enters the website I want it to look exciting and make them want to 'have a go'. When the player is playing the game I want the game to give the player feedback. Everything in the site must be relevant to Harry Potter.
+The objective of this project is to create an interactive and fun game for a player which they will want to play again and again. A player must want to interact with the website and the website must inturn react to the interaction of the player. When the player first enters the website, I want it to look exciting and make them want to 'have a go'. When the player is playing the game, I want the game to give the player feedback. Everything in the site must be relevant to Harry Potter.
 ### *Scope*
 The concept of the game is based on the 'Simon' game of the 1980's in the style of Harry Potter. 
 #### *In Scope*
@@ -54,22 +54,22 @@ A dropdown menu will allow the player access to instructions of how to play the 
 [Mobile](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/wireframes/MS2-HP-Game_Mobile.pdf)
 
 ###### Design modifications
-Since the orignal design there have been some changes.
+Since the original design there have been some changes.
 1. Originally there was only going to be a menu travelable instructions page but I decided to add an about page creating the need for a menu to select the pages.
-The menu was moved to the left hand side because, when using the bootstrap navbar 'hamburger icon' on the right on smaller devices, the icon jumped left to expand the dropdown menu which I thought looked untidy.  
-2. I decided against a score tally because it seemed unnecessary for the enjoyment of the game. Instead I decided the player would have a better UX if a recognisable friendly character from Harry Potter congratulated them. I tried to keep the wording of the message in tune with the character.
+The menu was moved to the left-hand side because, when using the bootstrap navbar 'hamburger icon' on the right on smaller devices, the icon jumped left to expand the dropdown menu which I thought looked untidy.  
+2. I decided against a score tally because it seemed unnecessary for the enjoyment of the game. Instead, I decided the player would have a better UX if a recognisable friendly character from Harry Potter congratulated them. I tried to keep the wording of the message in tune with the character.
 3. The wording of the losing messages stayed very close to the orignal design with some adjustments to help with the cosmetic UX.
 4. My mentor suggested a wooden background for the losing messages and my daughter suggests a piece of parchment which was more in keeping with the Harry Potter theme.
 5. I also decided clearing the screen and showing the losing message in the centre was more impactful and would be easier to read on smaller devices.
 
 ### *Surface*
-The images I am using on the wesite include the school crest, the four house crests, Dobby and some parchment.(see below under Media)
-The four house crests will act as the four buttons and give the colors red, green, yellow and blue which will have the ability to illuminate.
-The background will be a dark regal/magical purple.
-The headings will be in a bright yellow to represent gold.
-The win message will appear below Dobby in yellow with a red boarder.
-The lose messages will appear on the parchement in black.
-The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. [font by Anke Arnold](www.anke-art.de)
+1. The images I am using on the wesite include the school crest, the four house crests, Dobby and some parchment.(see below under Media)
+2. The four house crests will act as the four buttons and give the colors red, green, yellow and blue which will have the ability to illuminate.
+3. The background will be a dark regal/magical purple.
+4. The headings will be in a bright yellow to represent gold.
+5. The win message will appear below Dobby in yellow with a red boarder.
+6. The lose messages will appear on the parchment in black.
+The font on the main game pages will be in the 'Parry Hotter' font which is similar to the real Harry Potter lettering. [font by Anke Arnold](https://www.anke-art.de)
 The font on the How to play and About pages will be white so it stands out from the page making it easy to read.
 #### Hogwarts School Crest
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/hogwarts_crest.png)
@@ -81,7 +81,7 @@ The font on the How to play and About pages will be white so it stands out from 
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/ravenclaw_crest.png)
 #### Hufflepuff House Crest
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/hufflepuff_crest.png)
-#### Parchement
+#### Parchment
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/paper.png)
 #### Dobby
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/dobby.png)
@@ -89,16 +89,16 @@ The font on the How to play and About pages will be white so it stands out from 
 ## Features
 ### Existing Features
 #### feature 1
-When the home page loads it's position and opacity changes bringing the webpage to life. 
+When the home page loads its position and opacity changes bringing the webpage to life. 
 #### feature 2
 I wanted the transition from the home page to the game page to be softer to appear smoother for the player.
 #### feature 3
 When the player fails to follow the pattern created by the crests lighting up, a message relating to the last crest in the pattern pops up on a piece of parchment in the middle of the screen in black writing.
 #### feature 4
-When the player successfully follows the pattern this image appears.
+When the player successfully follows the pattern, this image appears.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/dobby-screen.png)
 #### feature 5
-When the player does not successfully follow the pattern these messages appear.
+When the player does not successfully follow the pattern, these messages appear.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/lost-message-gryfindr.png)
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/lost-message-slytherin.png)
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/lost-message-hufflepuff.png)
@@ -123,7 +123,7 @@ I found out how to create the Home page movement and opacity from this YouTube v
 ### feature 3
 My mentor Kyeza Arnold suggested a wooden background for the pop-up message. I found this more difficult to read and wanted a border around the font to make it stand out more. I added a black boarder and a red shadow. [css-font-border](https://stackoverflow.com/questions/2570972/css-font-border). I later changed the background to parchment which was suggested by my daughter.
 
-I was struggling to centralise some of the items and came across this line of code in stackoverflow. Sadly I did not keep a not of the web address or who provided it to stackoverflow. 
+I was struggling to centralise some of the items and came across this line of code in stackoverflow. Sadly, I did not keep a not of the web address or who provided it to stackoverflow. 
     left: 0; right: 0; top: 0; bottom: 0; margin: auto; /* center */
     
 When using Google to find out more information about various parts of my code that were not working as I expected I often used[w3schools](https://www.w3schools.com/default.asp), [stackoverflow](https://stackoverflow.com/questions/tagged/html), [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) and [jQuery](https://jquery.com/).

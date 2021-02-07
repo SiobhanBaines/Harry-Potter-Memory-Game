@@ -24,14 +24,15 @@ I then added some media query statements which made the crests appear correctly 
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/crest-col-md.png)
 
 I then changed the order round of the col classes and adjusted the media queries which appears to have created the image I desire. All four crests together in the centre.
+
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/crest-col-swap.png)
 
 ### Issue with switch clause for user selection
-When testing the game I found that everything appeared to work for the first round of the game where only one crest needed to be selected. I tried multiple different methods including a switch statement, a for loop and some nested if statements. None worked. In the for loop in the second round, it loaded the id of the first click twice before I had clicked on the second crest which I found out by using multiple console logs.
+When testing the game, I found that everything appeared to work for the first round of the game where only one crest needed to be selected. I tried multiple different methods including a switch statement, a for loop and some nested if statements. None worked. In the for loop in the second round, it loaded the id of the first click twice before I had clicked on the second crest which I found out by using multiple console logs.
 Below is the result from the for loop. playerArray should be the same as crestArray.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/switch.png)
 
-With the help of tutor support I found the fix was to call the function using jquery in the same way as I had for Dobby and Messageboard. [$(document).on('click', '.game-btn', function selectHouse() {] instead of [$('.game-btn').click(function selectHouse() {]. And use the this statement which was so much cleaner.
+With the help of tutor support I found the fix was to call the function using jquery in the same way as I had for Dobby and Messageboard. [$(document).on('click', '.game-btn', function selectHouse() {] instead of [$('.game-btn').click(function selectHouse() {]. Using the 'this' statement which was so much cleaner.
 
 ### The crests all stay lit at the same time
 When the game lights up the crests, it should switch on and then switch off the crest light up after a pause before lighting up the next crest.
@@ -47,7 +48,7 @@ The memory test is covered by the patterns created that the player needs to repl
 The menu gives easy access to the instructions on the 'How to play' page. - asked Ciara and Fiona to check the instructions are correct and make sense.
 The menu gives easy access to some information about the theme, 'Harry Potter'.
 
-I believe the game hit the mark, at least for my 10 year old niece who messaged me saying she loved the game.
+I believe the game hit the mark, at least for my 10-year-old niece who messaged me saying she loved the game.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/d73d7a420dbaa9c264dfc72d62d50d6618be677a/reference%20documents/testing%20images/daisy.png).
 
 ## Unit Testing
@@ -66,9 +67,9 @@ I believe the game hit the mark, at least for my 10 year old niece who messaged 
 2. Validate the code
     * Use [validator.w3](https://validator.w3.org/) to check the HTML
     * Use [jigsaw.w3](https://jigsaw.w3.org/css-validator/) to check the CSS
-    * Use [JSHint](https://jshint.com/) to check the Javascript
+    * Use [JSHint](https://jshint.com/) to check the JavaScript
     * Use [autoprefixer](https://autoprefixer.github.io/) to add in any prefixes needed for other web browsers.
-    * Use a documentation application to check the spelling such as word but remember word will not always pick up incorrect spelling such as thrid instead of third. 
+    * Use a documentation application to check the spelling such as word but remember word will not always pick-up incorrect spelling such as thrid instead of third. 
 3. In Chrome dev tools use Lighthouse to check the performance of the website
 
 ### Functionality Testing
@@ -100,12 +101,12 @@ If the player clicks on the wrong house crest Dobby appears giving the player a 
 ### Code Validation
 #### Validate.w3
 The HTML code is valid if the [validator](https://validator.w3.org/) comes back with this image.
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/html-valid.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/308fd2e4c087ec043968db194eeb1c0bb14d2678/reference%20documents/testing%20images/html-valid.png)
 
 If there are errors, each one will need investigating. It is a good idea to validate periodically during the development especially if there are any complex issues to deal with.
 
 The CSS code is valid if the [validator](https://jigsaw.w3.org/css-validator/) comes back with this image.
-![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/css-valid.png)
+![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/308fd2e4c087ec043968db194eeb1c0bb14d2678/reference%20documents/testing%20images/css-valid.png)
 
 If there are any errors, each one will need to be investigated and corrected.
 
@@ -119,7 +120,7 @@ I ran Lighthouse over all the pages in both desktop and mobile mode to find out 
 ### Results before any fixes were applied
 #### Desktop
 ##### Home Page
-There were no issue in performance on the Home page when run on a desktop so I didn't need to investigate anything.
+There was no issue in performance on the Home page when run on a desktop so I didn't need to investigate anything.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/lighthouse/before-changes/index-desk.png)
 ##### Game Page
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/lighthouse/before-changes/game-desk-1.png)
@@ -133,7 +134,7 @@ Issue 1. The same issue as for the game page.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/lighthouse/before-changes/about-desk-1.png)
 
 1. The same issue as for the game page.
-2. After investigating the issue with best practices, I added rel="noopener" to the social media a tags which improved the score.
+2. After investigating the issue with best practices, I added rel="noopener" to the social media 'a' tags which improved the score.
 
 #### Mobile
 ##### Home Page
@@ -148,7 +149,7 @@ Issue 4. I change the CSS to preload the font
 
 1. Too many images that were potentially too large. I reduced them using paint 3D and [TinyPNG](https://tinypng.com/).
 2. I added - ?display="swap" to the Fontawesome CDN which preloads the font
-Sadly this did not bring the performance up quite high enough for it to turn green 
+Sadly, this did not bring the performance up quite high enough for it to turn green 
 #### Help Page  
 All the lights are green on the lighthouse dashboard - no need to change anything.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/reference%20documents/testing%20images/lighthouse/before-changes/help-mobile.png)
@@ -166,12 +167,12 @@ All the lights are green on the lighthouse dashboard - no need to change anythin
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/lighthouse/after-changes/help-desk-after.png)
 #### About Page
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/lighthouse/after-changes/about-desk-after.png)
-
 ### Mobile
 #### Home Page
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/lighthouse/after-changes/index-mobile-after.png)
 #### Game Page
 As can be seen in the below image, I did not manage to get the performance quite good enough. My concern is the images would lose too mych resolution.
+
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/lighthouse/after-changes/game-mobile-after.png)
 #### Help Page
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/fb94d6e6c54ee4da4f4c55249e61e12bf250eb53/reference%20documents/testing%20images/lighthouse/after-changes/help-mobile-after.png)
