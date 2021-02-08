@@ -546,6 +546,9 @@ footer ul{
         font-size: 100%;
         font-weight:100 ;
     }
+    .about{
+        padding: 2em;
+}
 }
 /*----------media -- 360px ------*/
 @media (max-width: 360px){

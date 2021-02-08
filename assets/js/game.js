@@ -1,15 +1,12 @@
 /*------function to load crestArray with a new house crest code ----------*/
 function playGame() {
-
     let crest = crests[Math.floor(Math.random() * crests.length)];
     crestArray.push(crest);
-  /*  i = crestArray.length - 1;*/
-
     var timer = setInterval(lightOn, 1000);
     var sameTimer = setInterval(lightOff, 0);
-    /*------function to light up crests stored in crestArray---------*/
-    function lightOn() {
 
+/*------function to light up crests stored in crestArray---------*/
+    function lightOn() {
         if (x < crestArray.length) {
             if ((crestArray.length > 1) &&
                 (crestArray[x] === crestArray[x + 1])) {
@@ -25,10 +22,9 @@ function playGame() {
             clearInterval(timer);
         }
     }
-    /*------function to remove the lightUp class on a special interval when the same 
-                crest is being lit up next---------*/
+/*------function to remove the lightUp class on a special interval 
+                when the same crest is being lit up next---------*/
     function lightOff() {
-
         $('.game-btn').removeClass('lightUp');
         clearInterval(sameTimer);
     }
@@ -36,7 +32,6 @@ function playGame() {
 
 /*------function to compare crestArray with playerArray (game selection with user selection)-----------*/
 function validation() {
-
     var is_same = (crestArray.length == playerArray.length) && crestArray.every(function (element, index) {
         return element === playerArray[index];
     });
@@ -48,6 +43,7 @@ function validation() {
         houseMessage();
     }
 }
+
 /*------function to determine which house won-------*/
 function houseMessage() {
     $('h1').hide();
@@ -74,6 +70,7 @@ function houseMessage() {
     x = 0;
     y = 0;
 }
+
 /*---function to let the player know they have won--*/
 function winnerMessage() {
     $('h1').hide();
