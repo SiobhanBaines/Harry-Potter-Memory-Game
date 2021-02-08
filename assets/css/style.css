@@ -440,6 +440,9 @@ footer ul{
     .win{
         padding-top:55%;
     }
+    .about{
+        padding: 2em;
+    }
 }
 /*--------media -- 540 ------*/
 @media (max-width: 540px){
@@ -511,7 +514,7 @@ footer ul{
     .game-btn{
         width: 100%;
     }
-        #gryffindor, #hufflepuff{
+    #gryffindor, #hufflepuff{
         margin-left: 10%;
     }
     #slytherin, #ravenclaw{
@@ -541,14 +544,11 @@ footer ul{
         top: 4em;
     }
     .instructions{
-        width: 90%;
-        padding-left: 2em;
+        width: 95%;
+        padding-left: 1em;
         font-size: 100%;
         font-weight:100 ;
     }
-    .about{
-        padding: 2em;
-}
 }
 /*----------media -- 360px ------*/
 @media (max-width: 360px){
