@@ -174,3 +174,5 @@ In Gitpod the bottom area of the screen is where git commands are entered.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/deployment.png)
 9.  After a few minutes the message will change and the site will be published.
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/89767e01a22aba418c6e45b7f594a5c2a83a05ab/reference%20documents/testing%20images/deployed.png)
+
+## Testing Document
