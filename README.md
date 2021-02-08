@@ -74,7 +74,7 @@ The menu was moved to the left-hand side because, when using the bootstrap navba
 8. The font on the How to play and About pages will be white so it stands out from the page making it easy to read.
 
 ### N.B.
-All of the images used in this website were downloaded from the internet.
+All of the images used in this website were downloaded from the internet. I was also unable to locate all 5 crests in exactly the same style which is why there are differences. 
 
 #### Hogwarts School Crest
 ![image](https://github.com/SiobhanBaines/Siobhan-Baines-MS2-HP-Game/blob/360d1825cd9bcd90d9a500c425ff503ab356e807/assets/images/hogwarts_crest.png)
