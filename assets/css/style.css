@@ -251,7 +251,7 @@ footer ul{
 }
 /*---------------------------------------About*/
 .about{
-    padding: 10%;
+    padding: 2em 6em;
 }
 .info-container{
     max-height: 100vh;
@@ -259,7 +259,7 @@ footer ul{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 15% 0;
+    padding: 2em 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
